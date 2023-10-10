@@ -46,10 +46,17 @@ architects and development team must consider. These include
 
 </div>
 
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
+1. Search for Rides: Allows passengers to search for available rides based on location, destination, and desired travel time.
+
+2. Book a Ride: Allows passengers to select and book a ride from the list of available rides.
+
+3. Accept/Decline Ride Request: Allows drivers to view and accept or decline ride requests from passengers.
+
+4. Track Ride: Allows passengers and drivers to track the progress of the ride and monitor estimated arrival time.
+
+5. Complete Ride: Allows passengers and drivers to confirm that the ride has been completed and process payment through the app.
+
+6. View Ride History: Allows users to view their ride history, including details such as ride date, time, location, and payment information.
 
 <div class="formalpara-title">
 
@@ -57,8 +64,11 @@ find it).
 
 </div>
 
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
+Motivation
+
+From the point of view of the end users a system is created or modified to improve support of a business activity and/or improve the quality.
+
+Form
 
 <div class="formalpara-title">
 
@@ -66,15 +76,11 @@ to improve support of a business activity and/or improve the quality.
 
 </div>
 
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
+Short textual description, probably in tabular use-case format. If requirements documents exist this overview should refer to these documents.
 
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
+Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
 
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
+See Introduction and Goals in the arc42 documentation.
 
 ## Quality Goals
 
