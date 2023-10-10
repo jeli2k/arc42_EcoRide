@@ -1,6 +1,6 @@
 # 
 
-# This is a test
+# RideShare: EcoRide
 
 **About arc42**
 
@@ -14,7 +14,7 @@ contributors. See <https://arc42.org>.
 
 <div class="note">
 
-TestThis version of the template contains some help and explanations. It is
+This version of the template contains some help and explanations. It is
 used for familiarization with arc42 and the understanding of the
 concepts. For documentation of your own system you use better the
 *plain* version.
@@ -28,15 +28,36 @@ concepts. For documentation of your own system you use better the
 Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
--   underlying business goals,
+- Essential features of the system:
+    - Easy and intuitive booking of a ride from A to B via the web, app, or mobile
+    - Real-time driver tracking
+    - Registration and  verification of drivers and passengers
+    - Create and edit profiles
+    - User feedback, support and rating system
+    - Integrated payment system
+    - Reporting and analytics features
 
--   essential features,
+- underlying business goals
+    - Ensuring seamless and accessible ride bookings, to offer a consistently dependable user experience
+    - Emphasis on sustainability and adopting eco-friendly practices to reduce emissions, promote electric shared mobility solutions, and actively contribute to a greener and more sustainable future
+    - Strong focus on data security
+    - Advanced Safety measures to safeguard the well-being of our riders and drivers, ensuring their trust in our platform 
 
--   essential functional requirements,
+- essential functional requirements
 
--   quality goals for the architecture and
+- quality goals for the architecture
 
--   relevant stakeholders and their expectations
+- Our Stakeholders and their expectations:
+    - Investor
+        - As an investor, I want to support an innovative ride-sharing app that revolutionizes the existing model and provides users with a convenient, efficient, and sustainable way to get around
+    - Driver
+        - As a driver, I want to be able to use an efficient and user-friendly ride-sharing app to offer my services and generate additional income 
+    - Customer
+        - As a customer, I want to be able to use a user-friendly ride-sharing app to travel conveniently, safely, quickly, and environmentally friendly from A to B
+    - Government & Authorities
+        - As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
+    - Payment Provider
+        - As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience.
 
 ## Requirements Overview
 
@@ -89,6 +110,22 @@ See Introduction and Goals in the arc42 documentation.
 **Contents**
 
 </div>
+
+| Priority   | Contact        | Expectations       |
+|-------------|----------------|--------------------|
+| *1* | *Reliability* | *Reliability is crucial for our car-sharing company, as it enhances customer trust in punctual and well-maintained vehicles, thus promoting a positive user experience and long-term customer loyalty.* |
+| *2* | *User-friendliness* | *User-friendliness is a central quality goal for our car-sharing company, as it ensures that customers can effortlessly and intuitively use our services, leading to a positive user experience and increasing the attractiveness of our service* |
+| *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
+-   Priority 1 
+    - Zu
+
+-   essential features,
+
+-   essential functional requirements,
+
+-   quality goals for the architecture and
+
+-   relevant stakeholders and their expectations
 
 The top three (max five) quality goals for the architecture whose
 fulfillment is of highest importance to the major stakeholders. We
