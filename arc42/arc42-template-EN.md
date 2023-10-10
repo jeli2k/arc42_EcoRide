@@ -105,6 +105,22 @@ arc42 documentation.
 
 </div>
 
+| Priority   | Contact        | Expectations       |
+|-------------|----------------|--------------------|
+| *1* | *Reliability* | *Reliability is crucial for our car-sharing company, as it enhances customer trust in punctual and well-maintained vehicles, thus promoting a positive user experience and long-term customer loyalty.* |
+| *2* | *User-friendliness* | *User-friendliness is a central quality goal for our car-sharing company, as it ensures that customers can effortlessly and intuitively use our services, leading to a positive user experience and increasing the attractiveness of our service* |
+| *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
+-   Priority 1 
+    - Zu
+
+-   essential features,
+
+-   essential functional requirements,
+
+-   quality goals for the architecture and
+
+-   relevant stakeholders and their expectations
+
 The top three (max five) quality goals for the architecture whose
 fulfillment is of highest importance to the major stakeholders. We
 really mean quality goals for the architecture. Don’t confuse them with
