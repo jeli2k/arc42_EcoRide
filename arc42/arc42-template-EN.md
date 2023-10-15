@@ -1,6 +1,6 @@
 # 
 
-# This is a test
+# RideShare: EcoRide
 
 **About arc42**
 
@@ -14,7 +14,7 @@ contributors. See <https://arc42.org>.
 
 <div class="note">
 
-TestThis version of the template contains some help and explanations. It is
+This version of the template contains some help and explanations. It is
 used for familiarization with arc42 and the understanding of the
 concepts. For documentation of your own system you use better the
 *plain* version.
@@ -28,15 +28,36 @@ concepts. For documentation of your own system you use better the
 Describes the relevant requirements and the driving forces that software
 architects and development team must consider. These include
 
--   underlying business goals,
+- Essential features of the system:
+    - Easy and intuitive booking of a ride from A to B via the web, app, or mobile
+    - Real-time driver tracking
+    - Registration and  verification of drivers and passengers
+    - Create and edit profiles
+    - User feedback, support and rating system
+    - Integrated payment system
+    - Reporting and analytics features
 
--   essential features,
+- underlying business goals
+    - Ensuring seamless and accessible ride bookings, to offer a consistently dependable user experience
+    - Emphasis on sustainability and adopting eco-friendly practices to reduce emissions, promote electric shared mobility solutions, and actively contribute to a greener and more sustainable future
+    - Strong focus on data security
+    - Advanced Safety measures to safeguard the well-being of our riders and drivers, ensuring their trust in our platform 
 
--   essential functional requirements,
+- essential functional requirements
 
--   quality goals for the architecture and
+- quality goals for the architecture
 
--   relevant stakeholders and their expectations
+- Our Stakeholders and their expectations:
+    - Investor
+        - As an investor, I want to support an innovative ride-sharing app that revolutionizes the existing model and provides users with a convenient, efficient, and sustainable way to get around
+    - Driver
+        - As a driver, I want to be able to use an efficient and user-friendly ride-sharing app to offer my services and generate additional income 
+    - Customer
+        - As a customer, I want to be able to use a user-friendly ride-sharing app to travel conveniently, safely, quickly, and environmentally friendly from A to B
+    - Government & Authorities
+        - As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
+    - Payment Provider
+        - As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience.
 
 ## Requirements Overview
 
@@ -46,10 +67,17 @@ architects and development team must consider. These include
 
 </div>
 
-Short description of the functional requirements, driving forces,
-extract (or abstract) of requirements. Link to (hopefully existing)
-requirements documents (with version number and information where to
-find it).
+1. Search for Rides: Allows passengers to search for available rides based on location, destination, and desired travel time.
+
+2. Book a Ride: Allows passengers to select and book a ride from the list of available rides.
+
+3. Accept/Decline Ride Request: Allows drivers to view and accept or decline ride requests from passengers.
+
+4. Track Ride: Allows passengers and drivers to track the progress of the ride and monitor estimated arrival time.
+
+5. Complete Ride: Allows passengers and drivers to confirm that the ride has been completed and process payment through the app.
+
+6. View Ride History: Allows users to view their ride history, including details such as ride date, time, location, and payment information.
 
 <div class="formalpara-title">
 
@@ -57,8 +85,11 @@ find it).
 
 </div>
 
-From the point of view of the end users a system is created or modified
-to improve support of a business activity and/or improve the quality.
+Motivation
+
+From the point of view of the end users a system is created or modified to improve support of a business activity and/or improve the quality.
+
+Form
 
 <div class="formalpara-title">
 
@@ -66,15 +97,11 @@ to improve support of a business activity and/or improve the quality.
 
 </div>
 
-Short textual description, probably in tabular use-case format. If
-requirements documents exist this overview should refer to these
-documents.
+Short textual description, probably in tabular use-case format. If requirements documents exist this overview should refer to these documents.
 
-Keep these excerpts as short as possible. Balance readability of this
-document with potential redundancy w.r.t to requirements documents.
+Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
 
-See [Introduction and Goals](https://docs.arc42.org/section-1/) in the
-arc42 documentation.
+See Introduction and Goals in the arc42 documentation.
 
 ## Quality Goals
 
