@@ -89,16 +89,7 @@ arc42 documentation.
 | *1* | *Reliability* | *Reliability is crucial for our car-sharing company, as it enhances customer trust in punctual and well-maintained vehicles, thus promoting a positive user experience and long-term customer loyalty.* |
 | *2* | *User-friendliness* | *User-friendliness is a central quality goal for our car-sharing company, as it ensures that customers can effortlessly and intuitively use our services, leading to a positive user experience and increasing the attractiveness of our service* |
 | *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
--   Priority 1 
-    - Zu
 
--   essential features,
-
--   essential functional requirements,
-
--   quality goals for the architecture and
-
--   relevant stakeholders and their expectations
 
 The top three (max five) quality goals for the architecture whose
 fulfillment is of highest importance to the major stakeholders. We
@@ -214,6 +205,23 @@ documentation or naming conventions)
 
 See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
 arc42 documentation.
+
+
+## Architecture Decisions
+<div class="formalpara-title">
+
+**Contents**
+
+</div>
+
+| Problem   | Considered Alternatives | Decision       |
+|-------------|----------------|--------------------|
+| *Which type of database?* | *SQL, Maria DB, Oracle* | *NoSQL: Cost-Effective, Scalability, High Availability, Compatibility with most Cloud Solution Services, Migration* |
+| *What type of Infrastructure?* | *Cloud Based, On Premise Infrastructure, Edge Computing* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
+| *Which Data Process model?* | *Batch Processing, Stream Processing Model,Lambda Architecture* | *Real Time Data Processing: immediate updates and responses to users, enables real time decision making, competitive advantage* |
+
+
+
 
 <div style="page-break-after: always;"></div>
 
