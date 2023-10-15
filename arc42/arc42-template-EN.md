@@ -245,7 +245,7 @@ arc42 documentation.
 |-------------|----------------|--------------------|
 | *Which type of database?* | *SQL, Maria DB, Oracle* | *NoSQL: Cost-Effective, Scalability, High Availability, Compatibility with most Cloud Solution Services, Migration* |
 | *What type of Infrastructure?* | *Cloud Based, On Premise Infrastructure, Edge Computing* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
-| *Which Data Process model?* | *Batch Processing, Stream Processing Model,Lambda Architecture* | *Real Time Data Processing: immediate updates and responses to users, enables real time decision making, competitive advantage* |
+| *Which Data Process model?* | *Batch Processing, Stream Processing Model,Lambda Architecture* | *Real Time Data Processing: immediate updates and responses to users, enables real time decision making, competitive advantage.* |
 
 
 
