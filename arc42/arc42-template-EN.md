@@ -169,21 +169,10 @@ See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
 arc42 documentation.
 
 
+
+
+
 ## Architecture Decisions
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-| Risk/Technical Debt   | Description |
-|-------------|----------------|
-| *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.<br>-Using ACID Transactions to maintain data consistency<br>-By implementing a microservices-based architectural approach, we aim to ensure the horizontal scalability and elasticity of our processing system, allowing us to effortlessly handle growing data volumes and sudden spikes in demand efficiently.*  | 
-| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. To effectively address these challenges, consider these key elements:<br>-Traffic Testing: Ensure your system can handle variable traffic loads, from regular usage to peak demand.<br>-Workload Planning: Optimize costs by accurately provisioning resources based on your application's needs.<br>-Incident Response Planning: Develop a clear plan to swiftly respond to service outages or security incidents.<br>-Security Audits: Regularly assess your IaaS security to identify and mitigate vulnerabilities.<br>* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
-| *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.<br>-Optimize Service Usage and Contracts: Actively monitor service usage to identify cost-saving opportunities and negotiate cost-effective contracts with service providers.<br>-Prepare for Service Outages: Develop contingency plans to ensure business continuity during service outages, including strategies for graceful degradation and backup solutions.* | 
-
-
-## Risks and Technical Debt
 <div class="formalpara-title">
 
 **Contents**
@@ -197,6 +186,20 @@ arc42 documentation.
 | *Which Data Process model?* | *Batch Processing, Stream Processing Model,Lambda Architecture* | *Real Time Data Processing: immediate updates and responses to users, enables real time decision making, competitive advantage.* |
 
 
+
+
+## Risks and Technical Debt
+<div class="formalpara-title">
+
+**Contents**
+
+</div>
+
+| Risk/Technical Debt   | Description |
+|-------------|----------------|
+| *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.<br>-Using ACID Transactions to maintain data consistency<br>-By implementing a microservices-based architectural approach, we aim to ensure the horizontal scalability and elasticity of our processing system, allowing us to effortlessly handle growing data volumes and sudden spikes in demand efficiently.*  | 
+| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. To effectively address these challenges, consider these key elements:<br>-Traffic Testing: Ensure your system can handle variable traffic loads, from regular usage to peak demand.<br>-Workload Planning: Optimize costs by accurately provisioning resources based on your application's needs.<br>-Incident Response Planning: Develop a clear plan to swiftly respond to service outages or security incidents.<br>-Security Audits: Regularly assess your IaaS security to identify and mitigate vulnerabilities.<br>* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
+| *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.<br>-Optimize Service Usage and Contracts: Actively monitor service usage to identify cost-saving opportunities and negotiate cost-effective contracts with service providers.<br>-Prepare for Service Outages: Develop contingency plans to ensure business continuity during service outages, including strategies for graceful degradation and backup solutions.* | 
 
 
 <div style="page-break-after: always;"></div>
