@@ -125,7 +125,7 @@ Our Stakeholders and their expectations are:
 | *Investors* | *Maryam Patel* | *As an investor, I want to support an innovative ride-sharing app that revolutionizes the existing model and provides users with a convenient, efficient, and sustainable way to get around* |
 | *Drivers* | *Amirah Rahman* | *As a driver, I want to be able to use an efficient and user-friendly ride-sharing app to offer my services and generate additional income* |
 | *Customers* | *Megan Chen* | *As a customer, I want to be able to use a user-friendly ride-sharing app to travel conveniently, safely, quickly, and environmentally friendly from A to B* |
-| *Government & Authorities* | *Raj Gupta, Javier Gomez* | *As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
+| *Government & Authorities* | *Raj Gupta, Javier Gomez* | *As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region*
 | *Payment Providers* | *PayPal, Klarna* | *As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience* |
 
 
@@ -190,8 +190,6 @@ arc42 documentation.
 
 ## Risks and Technical Debt
 <div class="formalpara-title">
-
-**Contents**
 
 </div>
 
