@@ -33,7 +33,6 @@ The goal of EcoRide is to provide a fast, safe, and environmentally friendly way
 The subsequent paragraphs elaborate on the various aspects and solutions contributing to these goals
 
 ### Essential features of the System
-
     - Easy and intuitive booking of a ride from A to B via the web, app, or mobile
     - Real-time driver tracking
     - Registration and  verification of drivers and passengers
@@ -41,6 +40,7 @@ The subsequent paragraphs elaborate on the various aspects and solutions contrib
     - User feedback, support and rating system
     - Integrated payment system
     - Reporting and analytics features
+
 
 ### Business Goals
 - Our Business Goals include
@@ -101,55 +101,16 @@ Our Stakeholders and their expectations are:
 
 ## Requirements Overview
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-1. Search for Rides: Allows passengers to search for available rides based on location, destination, and desired travel time.
-
-2. Book a Ride: Allows passengers to select and book a ride from the list of available rides.
-
-3. Accept/Decline Ride Request: Allows drivers to view and accept or decline ride requests from passengers.
-
-4. Track Ride: Allows passengers and drivers to track the progress of the ride and monitor estimated arrival time.
-
-5. Complete Ride: Allows passengers and drivers to confirm that the ride has been completed and process payment through the app.
-
-6. View Ride History: Allows users to view their ride history, including details such as ride date, time, location, and payment information.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Motivation
-
-From the point of view of the end users a system is created or modified to improve support of a business activity and/or improve the quality.
-
-Form
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Short textual description, probably in tabular use-case format. If requirements documents exist this overview should refer to these documents.
-
-Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
-
-See Introduction and Goals in the arc42 documentation.
+| Requirements                |  Explanation |
+|-----------------------------|---|
+| Search for Rides            |  Allows passengers to search for available rides based on location, destination, and desired travel time |
+| Book a Ride                 | Allows passengers to select and book a ride from the list of available rides  |
+| Accept/Decline Ride Request | Allows drivers to view and accept or decline ride requests from passengers |
+| Track Ride                  | Allows passengers and drivers to track the progress of the ride and monitor estimated arrival time |
+| Complete Ride               | Allows passengers and drivers to confirm that the ride has been completed and process payment through the app |
+| View Ride History           | Allows users to view their ride history, including details such as ride date, time, location, and payment information  |
 
 ## Quality Goals
-
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
 
 | Priority   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
@@ -157,82 +118,16 @@ See Introduction and Goals in the arc42 documentation.
 | *2* | *User-friendliness* | *User-friendliness is a central quality goal for our car-sharing company, as it ensures that customers can effortlessly and intuitively use our services, leading to a positive user experience and increasing the attractiveness of our service* |
 | *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
 
-
-The top three (max five) quality goals for the architecture whose
-fulfillment is of highest importance to the major stakeholders. We
-really mean quality goals for the architecture. Don’t confuse them with
-project goals. They are not necessarily identical.
-
-Consider this overview of potential topics (based upon the ISO 25010
-standard):
-
-![Categories of Quality
-Requirements](images/01_2_iso-25010-topics-EN.drawio.png)
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know the quality goals of your most important stakeholders,
-since they will influence fundamental architectural decisions. Make sure
-to be very concrete about these qualities, avoid buzzwords. If you as an
-architect do not know how the quality of your work will be judged…
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-A table with quality goals and concrete scenarios, ordered by priorities
-
 ## Stakeholders
-
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Explicit overview of stakeholders of the system, i.e. all person, roles
-or organizations that
-
--   should know the architecture
-
--   have to be convinced of the architecture
-
--   have to work with the architecture or with code
-
--   need the documentation of the architecture for their work
-
--   have to come up with decisions about the system or its development
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should know all parties involved in development of the system or
-affected by the system. Otherwise, you may get nasty surprises later in
-the development process. These stakeholders determine the extent and the
-level of detail of your work and its results.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Table with role names, person names, and their expectations with respect
-to the architecture and its documentation.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
-| *\<Role-1>* | *\<Contact-1>* | *\<Expectation-1>* |
-| *\<Role-2>* | *\<Contact-2>* | *\<Expectation-2>* |
+| *Investors* | *Maryam Patel* | *As an investor, I want to support an innovative ride-sharing app that revolutionizes the existing model and provides users with a convenient, efficient, and sustainable way to get around* |
+| *Drivers* | *Amirah Rahman* | *As a driver, I want to be able to use an efficient and user-friendly ride-sharing app to offer my services and generate additional income* |
+| *Customers* | *Megan Chen* | *As a customer, I want to be able to use a user-friendly ride-sharing app to travel conveniently, safely, quickly, and environmentally friendly from A to B* |
+| *Government & Authorities* | *Raj Gupta, Javier Gomez* | *As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
+| *Payment Providers* | *PayPal, Klarna* | *As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience* |
+
 
 <div style="page-break-after: always;"></div>
 
