@@ -369,44 +369,27 @@ and input/output.
 
 <div class="formalpara-title">
 
-**Contents**
-
 </div>
 
-A short summary and explanation of the fundamental decisions and
-solution strategies, that shape system architecture. It includes
+### Technology Decisions:
 
--   technology decisions
+Utilizing a Service-Oriented Architecture (SOA) with loosely coupled services enables efficient scaling of specific features in response to increased user traffic.
 
--   decisions about the top-level decomposition of the system, e.g.
-    usage of an architectural pattern or design pattern
+A cloud-based infrastructure ensures system reliability, availability, and accelerated development and deployment cycles through fault isolation and redundancy.
 
--   decisions on how to achieve key quality goals
+### Top-Level Decomposition:
 
--   relevant organizational decisions, e.g. selecting a development
-    process or delegating certain tasks to third parties.
+The chosen microservices architectural pattern effectively decomposes the system into manageable, loosely coupled services, allowing for specialized functionalities and easy scaling.
+
+### Achieving Key Quality Goals:
+
+Scalability is achieved through SOA, enabling seamless resource allocation to handle escalating user traffic while minimizing performance impact.
+
+The combination of SOA and a cloud-based infrastructure provides flexibility, reliability, and availability, supporting rapid development and deployment cycles, aligning with the goal of continuous integration and delivery.
 
 <div class="formalpara-title">
 
-**Motivation**
-
 </div>
-
-These decisions form the cornerstones for your architecture. They are
-the foundation for many other detailed decisions or implementation
-rules.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Keep the explanations of such key decisions short.
-
-Motivate what was decided and why it was decided that way, based upon
-problem statement, quality goals and key constraints. Refer to details
-in the following sections.
 
 See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
 documentation.
