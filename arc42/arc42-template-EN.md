@@ -25,10 +25,15 @@ concepts. For documentation of your own system you use better the
 
 # Introduction and Goals
 
-Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include
+[comment]: <> (Describes the relevant requirements and the driving forces that software
+architects and development team must consider. These include)
 
-- Essential features of the system:
+The goal of EcoRide is to provide a fast, safe, and environmentally friendly way of traveling
+
+The subsequent paragraphs elaborate on the various aspects and solutions contributing to these goals
+
+### Essential features of the System
+
     - Easy and intuitive booking of a ride from A to B via the web, app, or mobile
     - Real-time driver tracking
     - Registration and  verification of drivers and passengers
@@ -37,27 +42,62 @@ architects and development team must consider. These include
     - Integrated payment system
     - Reporting and analytics features
 
-- underlying business goals
+### Business Goals
+- Our Business Goals include
     - Ensuring seamless and accessible ride bookings, to offer a consistently dependable user experience
     - Emphasis on sustainability and adopting eco-friendly practices to reduce emissions, promote electric shared mobility solutions, and actively contribute to a greener and more sustainable future
     - Strong focus on data security
     - Advanced Safety measures to safeguard the well-being of our riders and drivers, ensuring their trust in our platform 
 
-- essential functional requirements
+### Essential functional requirements
+- These outlined functional requirements serve as a foundation for the development of our EcoRide app. They aim to provide a fast and secure mode of transportation while ensuring a user-friendly and efficient experience for our users.
 
-- quality goals for the architecture
+    - User Registration and Profile Management
+        - Allow users to register for the service, providing necessary personal information
+        - Enable users to create and edit their profiles, including name, contact details, and profile picture
+    - Ride Booking
+        - A System that enables users to book rides from point A to point B
+        - The booking process has to be accessible through the web, mobile and app
+    - User Verification
+        - Verification system for both drivers and passengers to enhance platform safety and trust
+        - Verification may include identity checks, driver's license verification, and other relevant measures
+    - Real-time Driver Tracking
+        - Provide real-time driver tracking features, allowing passengers to track the driver's location and receive estimated arrival times (ETA)
+    - Profile Creation and Editing
+        - Allow users to create and edit their profiles, including personal details and profile pictures, to personalize their accounts
+    - Feedback, Support, and Rating System
+        - A System that enables users to provide feedback, seek support, and ask questions
+        - Includes a user-friendly rating system for passengers to rate drivers and vice versa
+    - Integrated Payment System
+        - A secure payment system for handling transactions between drivers and passengers
+        - Support various payment methods to ensure convenience for users
+    - Reporting and Analytics Features
+        - Reporting and analytics functions to monitor the platform's performance and user activities
+        - Gather data related to rides, earnings, user engagement, and other relevant information
 
-- Our Stakeholders and their expectations:
-    - Investor
-        - As an investor, I want to support an innovative ride-sharing app that revolutionizes the existing model and provides users with a convenient, efficient, and sustainable way to get around
-    - Driver
-        - As a driver, I want to be able to use an efficient and user-friendly ride-sharing app to offer my services and generate additional income 
-    - Customer
-        - As a customer, I want to be able to use a user-friendly ride-sharing app to travel conveniently, safely, quickly, and environmentally friendly from A to B
-    - Government & Authorities
-        - As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
-    - Payment Provider
-        - As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience.
+[comment]: <> (Quality Goals for the architecture)
+### Quality Goals
+
+In EcoRide, we are committed to achieving three core quality goals:
+
+    - Reliability
+    - User-friendliness
+    - Data Security
+
+These pillars serve as the cornerstones of our mission to provide an exceptional and secure user experience
+
+### Stakeholders
+Our Stakeholders and their expectations are:
+- Investors
+     - As an investor, I want to support an innovative ride-sharing app that revolutionizes the existing model and provides users with a convenient, efficient, and sustainable way to get around
+- Drivers
+    - As a driver, I want to be able to use an efficient and user-friendly ride-sharing app to offer my services and generate additional income 
+- Customers
+    - As a customer, I want to be able to use a user-friendly ride-sharing app to travel conveniently, safely, quickly, and environmentally friendly from A to B
+- Government & Authorities
+    - As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
+ - Payment Providers
+    - As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience
 
 ## Requirements Overview
 
