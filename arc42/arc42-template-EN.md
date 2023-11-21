@@ -2,35 +2,15 @@
 
 # RideShare: EcoRide
 
-**About arc42**
-
-arc42, the template for documentation of software and system
-architecture.
-
-Template Version 8.2 EN. (based upon AsciiDoc version), January 2023
-
-Created, maintained and © by Dr. Peter Hruschka, Dr. Gernot Starke and
-contributors. See <https://arc42.org>.
-
-<div class="note">
-
-This version of the template contains some help and explanations. It is
-used for familiarization with arc42 and the understanding of the
-concepts. For documentation of your own system you use better the
-*plain* version.
-
-</div>
-
 <div style="page-break-after: always;"></div>
 
 # Introduction and Goals
 
-[comment]: <> (Describes the relevant requirements and the driving forces that software
-architects and development team must consider. These include)
+<!-- (Describes the relevant requirements and the driving forces that software architects and development team must consider. These include)-->
 
-The goal of EcoRide is to provide a fast, safe, and environmentally friendly way of traveling
+EcoRide aims to provide its customers with a convenient, safe, and environmentally friendly mode of transportation for seamless, efficient, and eco-conscious travel from point A to point B.
 
-The subsequent paragraphs elaborate on the various aspects and solutions contributing to these goals
+The subsequent paragraphs delve into our architecture and elaborate on the various aspects and solutions contributing to these goals
 
 ### Essential features of the System
     - Easy and intuitive booking of a ride from A to B via the web, app, or mobile
@@ -133,41 +113,16 @@ Our Stakeholders and their expectations are:
 
 # Architecture Constraints
 
-<div class="formalpara-title">
+These constraints encompass various elements, from infrastructure choices to database selection and real-time data processing, all of which impact the way our software meets the needs of our users and stakeholders.
 
-**Contents**
+<!-- See [Architecture Constraints](https://docs.arc42.org/section-2/) in the arc42 documentation.-->
 
-</div>
 
-Any requirement that constraints software architects in their freedom of
-design and implementation decisions or decision about the development
-process. These constraints sometimes go beyond individual systems and
-are valid for whole organizations and companies.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Architects should know exactly where they are free in their design
-decisions and where they must adhere to constraints. Constraints must
-always be dealt with; they may be negotiable, though.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Simple tables of constraints with explanations. If needed you can
-subdivide them into technical constraints, organizational and political
-constraints and conventions (e.g. programming or versioning guidelines,
-documentation or naming conventions)
-
-See [Architecture Constraints](https://docs.arc42.org/section-2/) in the
-arc42 documentation.
-
+| Context | Decision | Consequences |
+|---|---|---|
+| Location independence, Budget friendly, Physical security and Data Security | We will use a Cloud Based Infrastructure to max out efficiency, reduce costs, increase agility, improve accessibility and enhance security | On demand scalability and flexibility, no upfront capital costs buying hardware, improved Data Security, Service availability in cloud infrastructure varies by provider and design, requiring a commitment to ensure consistent uptime. Third-party dependency, data transfer costs and security concern, no physical control over hardware |
+| High Data Volume, Availability and Scalability and concerns | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to use unstructured or semi-structured data, horizontal scalability, high read and write throughput, improved application performance and responsiveness. Flexibility can lead to data inconsistency, NoSQL may require careful planning to scale effectively, CAP theorem trade-offs can impact performance and/or strong consistency |
+| Importance of Dynamic-Routing, Customer-Experience, Safety and Security | We will use Real Time Data Processing, to enable immediate analysis and response to incoming data | Immediate updates and responses to users, enables real time decision making, competitive advantage. Implementing real-time data processing features adds complexity, requires additional computational resources |
 
 
 
@@ -281,6 +236,13 @@ the communication partner, the inputs, and the outputs.
 
 **\<optionally: Explanation of external domain interfaces>**
 
+The following diagram provides a comprehensive view of the system's communication partners, their specific interactions, and the data exchanged with the system's environment:
+
+<p align="center">
+<img src="images/Business_Context_Diagram.png" alt="Business Context Diagram">
+</p>
+
+
 ## Technical Context
 
 <div class="formalpara-title">
@@ -348,8 +310,8 @@ The combination of SOA and a cloud-based infrastructure provides flexibility, re
 
 </div>
 
-See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
-documentation.
+<!--See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
+documentation.-->
 
 <div style="page-break-after: always;"></div>
 
@@ -830,19 +792,27 @@ concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
 See [Concepts](https://docs.arc42.org/section-8/) in the arc42
 documentation.
 
-## *\<Concept 1>*
+### *User Experience (UX)*
 
-*\<explanation>*
+User Experience, often abbreviated as UX, focuses on creating a positive and seamless interaction between users and a digital product or service.
 
-## *\<Concept 2>*
+It encompasses various aspects, including the consistency of design and functionality, the representation of branding elements and logos, app navigation that ensures easy and intuitive user journeys, user authentication processes, push notifications for timely updates, geolocation and maps for location-based services, the flow for booking rides, payment processing, offline functionality to maintain usability without an internet connection, and a 5-star rating system with optional comments to gather user feedback. 
 
-*\<explanation>*
+Additionally, it includes the recognition of driver achievements through medals, enhancing the overall user experience.
 
-…
+### Architecture and Design Patterns
 
-## *\<Concept n>*
+The architecture and design of a digital application involve key decisions regarding the underlying technology and structure. 
 
-*\<explanation>*
+This includes the use of a NoSQL database for flexible data storage, a Google Cloud-based infrastructure to ensure scalability and reliability, integration with Google Maps for location-related features. 
+
+In addition payment gateways like PayPal and Klarna for secure and convenient transactions, the implementation of reusable components such as buttons, cards, and navigation bars for a consistent look and feel, and adherence to design guidelines like Material Design for Android and Human Interface Guidelines for iOS to provide a user-friendly and familiar interface.
+
+### Safety and Security Concepts
+
+Ensuring the safety and security of users' data and the application itself is paramount. 
+
+This involves implementing data encryption techniques to protect sensitive information, establishing a robust data backup and recovery system to prevent data loss, complying with data privacy regulations such as the General Data Protection Regulation (DSVGO), creating an incident response plan to address security breaches and other emergencies effectively, and employing secure user authentication methods to prevent unauthorized access and maintain user privacy.
 
 <div style="page-break-after: always;"></div>
 
