@@ -311,8 +311,8 @@ The combination of SOA and a cloud-based infrastructure provides flexibility, re
 
 </div>
 
-See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
-documentation.
+<!--See [Solution Strategy](https://docs.arc42.org/section-4/) in the arc42
+documentation.-->
 
 <div style="page-break-after: always;"></div>
 
