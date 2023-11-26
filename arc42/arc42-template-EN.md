@@ -278,8 +278,7 @@ documentation.-->
 
 # Building Block View
 
-<div class="formalpara-title">
-
+The Building Block View offers a structured snapshot of our system's architecture, breaking down key components and their interconnections to provide a comprehensive understanding of how EcoRide's functionalities are organized and interact
 
 **Level 1**
 
