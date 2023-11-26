@@ -458,17 +458,15 @@ The Runtime View provides a dynamic perspective on our system's operation, detai
 
 ## Runtime Scenario: Ride Booking
 
-![Alt text](image-2.png)
+![Alt text](images/UML-image-1.png)
 
 The Runtime View of the ride-booking process visually outlines interactions among three entities: the User's Device with the App, the Server, and the Driver's Device. Users initiate the process by entering their destination (Step 1), leading to the server displaying ride options (Step 2). After confirming ride details (Step 3), the server sends a request to a driver (Step 4), followed by driver acceptance (Step 5). The server communicates confirmation and estimated arrival time to the user (Step 6). Successful ride booking (Step 7) and accurate arrival time (Step 8) conclude the process, emphasizing system responsiveness and seamless communication
 
 ## Runtime Scenario: Real-Time Driver Tracking
 
-![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
+![Alt text](images/UML-image-2.png)
 
 The Runtime View of the Real-Time Driver Tracking captures the interaction dynamics involving a Passenger, the Ride-Sharing App, a Driver, and the GPS Service. It initiates with the Passenger activating real-time tracking in the app, triggering a sequence where the app requests real-time tracking from the Driver. Subsequently, the Driver seeks location data from the GPS Service, which is then relayed back to the Passenger through the app. Continuously updating the Estimated Time of Arrival (ETA), the EcoRide App ensures the Passenger remains informed about the Driver's location until the completion of the journey. The iterative process, marked by the condition 'until Driver Reaches Destination Location,' underscores the repetitive nature of these actions throughout the ride
-
-## \<Runtime Scenario n>
 
 <div style="page-break-after: always;"></div>
 
