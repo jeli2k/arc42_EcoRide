@@ -278,18 +278,23 @@ documentation.-->
 
 # Building Block View
 
-<div class="formalpara-title">
-
+The Building Block View offers a structured snapshot of our system's architecture, breaking down key components and their interconnections to provide a comprehensive understanding of how EcoRide's functionalities are organized and interact
 
 **Level 1**
+
+This level serves as an overview of the entire system. It showcases the core components, such as servers, databases, networks, or major software modules. This level explains the interactions between these components, revealing how users access the system, how data flows between different servers or services, and how external systems communicate with your system. Essentially, the Level 1 diagram provides a major understanding of the system's architecture, enabling stakeholders to comprehend its fundamental structure and flow.
 
 ![Level 1 of the Building Blocks Hierachy](images/level1-Page-1.jpg)
 
 **Level 2**
 
+Level 2 goes deeper into the system than Level 1. It shows more details about each part like servers, databases, and software. It explains how these parts work together, detailing specific server setups, database designs, and software functions. This level also covers how users interact with the system, how data moves between different parts, and how outside systems connect. It's a closer look at how things work inside the system beyond the basic structure.
+
 ![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
 
 **Level 3**
+
+This level dives even deeper into the system. It gets super detailed about each server, database, network setup, and software module mentioned in Level 2. This level shows exactly how servers are set up, the specific designs of databases, network configurations and the detailed workings of software parts like APIs.
 
 ![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
 
@@ -449,13 +454,15 @@ Specifies the internal structure of *building block x.1*.
 
 # Runtime View
 
-## Ride Booking
+The Runtime View provides a dynamic perspective on our system's operation, detailing the seamless interactions during the ride-booking process and real-time driver tracking. These visualizations showcase the responsive and communicative nature of EcoRide
+
+## Runtime Scenario: Ride Booking
 
 ![Alt text](image-2.png)
 
 The Runtime View of the ride-booking process visually outlines interactions among three entities: the User's Device with the App, the Server, and the Driver's Device. Users initiate the process by entering their destination (Step 1), leading to the server displaying ride options (Step 2). After confirming ride details (Step 3), the server sends a request to a driver (Step 4), followed by driver acceptance (Step 5). The server communicates confirmation and estimated arrival time to the user (Step 6). Successful ride booking (Step 7) and accurate arrival time (Step 8) conclude the process, emphasizing system responsiveness and seamless communication
 
-## Real-Time Driver Tracking
+## Runtime Scenario: Real-Time Driver Tracking
 
 ![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
 
