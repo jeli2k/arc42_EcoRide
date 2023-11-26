@@ -522,19 +522,25 @@ Specifies the internal structure of *building block x.1*.
 
 # Runtime View
 
-## \<Runtime Scenario 1>
+## Ride Booking
 
 ![Alt text](<Screenshot 2023-11-26 at 19.39.07-1.png>)
 
-The UML Sequence Diagram for the EcoRide app booking process visually represents the interactions between three entities: the User's Device running the EcoRide App, the EcoRide Server, and the Driver's Device. The process begins with the user opening the app and entering their destination (Step 1). The server then responds by displaying ride options (Step 2). The user confirms their ride details (Step 3), prompting the server to send a ride request to a driver (Step 4). The driver accepts the request (Step 5), and the server sends a confirmation along with the estimated arrival time back to the user (Step 6). The outcome phase includes the user successfully booking the ride (Step 7) and the server providing an accurate arrival time (Step 8). This diagram effectively illustrates the sequential flow of actions and interactions, highlighting the system's responsiveness and the communication between the user, server, and driver in the ride-booking process.
+The Runtime View of the ride-booking process visually outlines interactions among three entities: the User's Device with the App, the Server, and the Driver's Device. Users initiate the process by entering their destination (Step 1), leading to the server displaying ride options (Step 2). After confirming ride details (Step 3), the server sends a request to a driver (Step 4), followed by driver acceptance (Step 5). The server communicates confirmation and estimated arrival time to the user (Step 6). Successful ride booking (Step 7) and accurate arrival time (Step 8) conclude the process, emphasizing system responsiveness and seamless communication
 
-## \<Runtime Scenario 2>
+## Real-Time Driver Tracking
 
 ![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
 
+<<<<<<< HEAD
 This UML (Unified Modeling Language) sequence diagram represents the interaction between a Passenger, an EcoRide App, a Driver, and a GPS Service within a ride-sharing or taxi service context. The diagram begins with the Passenger initiating a real-time tracking feature in the app. Following this, the app sends a request for real-time tracking to the Driver, who then requests real-time location data from the GPS Service. The GPS Service sends the Driver's real-time location back to the Driver, who then sends this information to the EcoRide App.
 
 The EcoRide App calculates the Estimated Time of Arrival (ETA) and shows the Driver's current location to the Passenger. This information is continuously updated in a loop until the Driver reaches the destination. Finally, the Passenger is sent a notification that the ride is complete. The loop is marked with a condition stating "until Driver Reaches Destination Location," indicating that these steps repeat until the journey is concluded.
+=======
+The Runtime View of the Real-Time Driver Tracking captures the interaction dynamics involving a Passenger, the Ride-Sharing App, a Driver, and the GPS Service. It initiates with the Passenger activating real-time tracking in the app, triggering a sequence where the app requests real-time tracking from the Driver. Subsequently, the Driver seeks location data from the GPS Service, which is then relayed back to the Passenger through the app. Continuously updating the Estimated Time of Arrival (ETA), the EcoRide App ensures the Passenger remains informed about the Driver's location until the completion of the journey. The iterative process, marked by the condition 'until Driver Reaches Destination Location,' underscores the repetitive nature of these actions throughout the ride
+
+## \<Runtime Scenario n>
+>>>>>>> 805915662789376d00e63a0eb66431d7b0d10970
 
 <div style="page-break-after: always;"></div>
 
@@ -652,87 +658,7 @@ Please copy the structure from level 1 for each selected element.
 
 <div class="formalpara-title">
 
-**Content**
-
-</div>
-
-This section describes overall, principal regulations and solution ideas
-that are relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks. They can
-include many different topics, such as
-
--   models, especially domain models
-
--   architecture or design patterns
-
--   rules for using specific technology
-
--   principal, often technical decisions of an overarching (=
-    cross-cutting) nature
-
--   implementation rules
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Concepts form the basis for *conceptual integrity* (consistency,
-homogeneity) of the architecture. Thus, they are an important
-contribution to achieve inner qualities of your system.
-
-Some of these concepts cannot be assigned to individual building blocks,
-e.g. security or safety.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The form can be varied:
-
--   concept papers with any kind of structure
-
--   cross-cutting model excerpts or scenarios using notations of the
-    architecture views
-
--   sample implementations, especially for technical concepts
-
--   reference to typical usage of standard frameworks (e.g. using
-    Hibernate for object/relational mapping)
-
-<div class="formalpara-title">
-
-**Structure**
-
-</div>
-
-A potential (but not mandatory) structure for this section could be:
-
--   Domain concepts
-
--   User Experience concepts (UX)
-
--   Safety and security concepts
-
--   Architecture and design patterns
-
--   "Under-the-hood"
-
--   development concepts
-
--   operational concepts
-
-Note: it might be difficult to assign individual concepts to one
-specific topic on this list.
-
-![Possible topics for crosscutting
-concepts](images/08-Crosscutting-Concepts-Structure-EN.png)
-
-See [Concepts](https://docs.arc42.org/section-8/) in the arc42
-documentation.
+These cross-cutting concepts play a pivotal role in establishing and maintaining conceptual integrity, contributing to the consistency and homogeneity of our architecture and underpinning the inner qualities of our system
 
 ### *User Experience (UX)*
 
@@ -812,114 +738,57 @@ arc42 documentation. There you will find links and examples about ADR.
 
 <div class="formalpara-title">
 
-**Content**
+This section elaborates on the established quality goals of **Reliability**, 
+**User-Friendliness**, and **Data Security**. <br>
+The Quality Tree provides a detailed quality tree along with associated scenarios, encompassing both high-priority requirements essential for core objectives and additional quality measures with lower priority.
 
-</div>
+Each requirement is carefully tailored to address the specific and quantifiable expectations of stakeholders, providing a robust foundation for informed development and rigorous evaluation of our ride-sharing solution.
 
-This section contains all quality requirements as quality tree with
-scenarios. The most important ones have already been described in
-section 1.2. (quality goals)
+| Quality Requirements |  |  |
+|---|---|---|
+| Reliability |  |  |
+| User-Friendliness |  |  |
+| Data Security |  |  |
 
-Here you can also capture quality requirements with lesser priority,
-which will not create high risks when they are not fully achieved.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Since quality requirements will have a lot of influence on architectural
-decisions you should know for every stakeholder what is really important
-to them, concrete and measurable.
-
-See [Quality Requirements](https://docs.arc42.org/section-10/) in the
-arc42 documentation.
 
 ## Quality Tree
 
-<div class="formalpara-title">
+The Quality Tree outlines the fundamental principles of reliability, user-friendliness, and data security, shaping EcoRide's commitment to an innovative, secure, and sustainable ride-sharing experience
 
-**Content**
+![QualityTree](images/QualityTree.png)
 
-</div>
-
-The quality tree (as defined in ATAM – Architecture Tradeoff Analysis
-Method) with quality/evaluation scenarios as leafs.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The tree structure with priorities provides an overview for a sometimes
-large number of quality requirements.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-The quality tree is a high-level overview of the quality goals and
-requirements:
-
--   tree-like refinement of the term "quality". Use "quality" or
-    "usefulness" as a root
-
--   a mind map with quality categories as main branches
-
-In any case the tree should include links to the scenarios of the
-following section.
 
 ## Quality Scenarios
 
-<div class="formalpara-title">
+**Reliability**
 
-**Contents**
+Real-time Transaction Latency
+A user initiates a ride booking transaction. Under normal operations the system maintains an average latency of two seconds or better for processing all ride booking transactions, consistently falling within the acceptable range of 1.5 to 2.5 seconds
 
-</div>
+Accurate ETA and Tracking
+A user wants an accurate and reliable estimated time of arrival (ETA) and real-time tracking of drivers at runtime. 
+The system consistently provides this information and checks the provided information with ride completion times, passenger feedback and tracking data, to confirm that the displayed ETAs align with actual arrival times
 
-Concretization of (sometimes vague or implicit) quality requirements
-using (quality) scenarios.
+**User-friendliness**
 
-These scenarios describe what should happen when a stimulus arrives at
-the system.
+Intuitive App Interface
+A user wants to switch seamlessly between devices, sign in or register quickly and wants to request rides without manually entering their location.
+The system provides a uniform, intuitive interface with a hamburger icon for additional settings. It requires only email and password for login and registration and auto-tracks the user's location for ride requests in a few seconds.
 
-For architects, two kinds of scenarios are important:
+Efficient Customer Support
+A user encounters an application error during the live-phase and seeks assistance. 
+The system provides swift and efficient customer support which takes a maximum of 10 minutes, additionally the system includes a FAQ and live chat support, and automatically opens a new ticket for each issue.
 
--   Usage scenarios (also called application scenarios or use case
-    scenarios) describe the system’s runtime reaction to a certain
-    stimulus. This also includes scenarios that describe the system’s
-    efficiency or performance. Example: The system reacts to a user’s
-    request within one second.
+**Data Security**
 
--   Change scenarios describe a modification of the system or of its
-    immediate environment. Example: Additional functionality is
-    implemented or requirements for a quality attribute change.
+Privacy Compliance
+The developer wants to adapt the system after data protection regulations have been breached or new laws have been passed. The system is updated to solve security measurements and undergoes weekly reviews to implement preventive measures. 
 
-<div class="formalpara-title">
 
-**Motivation**
+Secure Payment Processing
+A user who conducts a payment transaction wants secure handling of the payment data. 
+The system confirms secure processing of user payment data through robust encryption, weekly security audits and penetration testing 
 
-</div>
-
-Scenarios make quality requirements concrete and allow to more easily
-measure or decide whether they are fulfilled.
-
-Especially when you want to assess your architecture using methods like
-ATAM you need to describe your quality goals (from section 1.2) more
-precisely down to a level of scenarios that can be discussed and
-evaluated.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Tabular or free form text.
 
 <div style="page-break-after: always;"></div>
 
