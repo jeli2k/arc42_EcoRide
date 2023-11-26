@@ -199,43 +199,6 @@ documentation.
 
 ## Business Context
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Specification of **all** communication partners (users, IT-systems, …)
-with explanations of domain specific inputs and outputs or interfaces.
-Optionally you can add domain specific formats or communication
-protocols.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-All stakeholders should understand which data are exchanged with the
-environment of the system.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-All kinds of diagrams that show the system as a black box and specify
-the domain interfaces to communication partners.
-
-Alternatively (or additionally) you can use a table. The title of the
-table is the name of your system, the three columns contain the name of
-the communication partner, the inputs, and the outputs.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of external domain interfaces>**
-
 The following diagram provides a comprehensive view of the system's communication partners, their specific interactions, and the data exchanged with the system's environment:
 
 <p align="center">
@@ -286,15 +249,13 @@ and input/output.
 
 # Solution Strategy
 
-<div class="formalpara-title">
-
-</div>
+Our Solution Strategy combines a Service-Oriented Architecture (SOA) with cloud-based infrastructure, ensuring scalability, reliability, and rapid development cycles
 
 ### Technology Decisions:
 
-Utilizing a Service-Oriented Architecture (SOA) with loosely coupled services enables efficient scaling of specific features in response to increased user traffic.
+We are utilizing a Service-Oriented Architecture (SOA) with loosely coupled services, which enables efficient scaling of specific features in response to increased user traffic
 
-A cloud-based infrastructure ensures system reliability, availability, and accelerated development and deployment cycles through fault isolation and redundancy.
+A cloud-based infrastructure ensures system reliability, availability, and accelerated development and deployment cycles through fault isolation and redundancy
 
 ### Top-Level Decomposition:
 
@@ -747,7 +708,7 @@ Each requirement is carefully tailored to address the specific and quantifiable 
 
 ## Quality Tree
 
-The Quality Tree outlines the fundamental principles of reliability, user-friendliness, and data security, shaping EcoRide's commitment to an innovative, secure, and sustainable ride-sharing experience
+Our Quality Tree consists of the values reliability, user-friendliness, and data security. The leaves are: Real-time Transaction Latency, Accurate ETA and Tracking, Intuitive App Interface, Efficient Customer Support, Secure Payment Processor, and Privacy Protection. 
 
 ![QualityTree](images/QualityTree.png)
 
