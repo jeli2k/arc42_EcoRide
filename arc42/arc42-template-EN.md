@@ -485,7 +485,7 @@ Specifies the internal structure of *building block x.1*.
 
 ## Ride Booking
 
-![Alt text](image-1.png)
+![Alt text](image-2.png)
 
 The Runtime View of the ride-booking process visually outlines interactions among three entities: the User's Device with the App, the Server, and the Driver's Device. Users initiate the process by entering their destination (Step 1), leading to the server displaying ride options (Step 2). After confirming ride details (Step 3), the server sends a request to a driver (Step 4), followed by driver acceptance (Step 5). The server communicates confirmation and estimated arrival time to the user (Step 6). Successful ride booking (Step 7) and accurate arrival time (Step 8) conclude the process, emphasizing system responsiveness and seamless communication
 
