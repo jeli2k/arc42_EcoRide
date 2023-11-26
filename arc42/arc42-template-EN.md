@@ -522,75 +522,25 @@ Specifies the internal structure of *building block x.1*.
 
 # Runtime View
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-The runtime view describes concrete behavior and interactions of the
-system’s building blocks in form of scenarios from the following areas:
-
--   important use cases or features: how do building blocks execute
-    them?
-
--   interactions at critical external interfaces: how do building blocks
-    cooperate with users and neighboring systems?
-
--   operation and administration: launch, start-up, stop
-
--   error and exception scenarios
-
-Remark: The main criterion for the choice of possible scenarios
-(sequences, workflows) is their **architectural relevance**. It is
-**not** important to describe a large number of scenarios. You should
-rather document a representative selection.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should understand how (instances of) building blocks of your system
-perform their job and communicate at runtime. You will mainly capture
-scenarios in your documentation to communicate your architecture to
-stakeholders that are less willing or able to read and understand the
-static models (building block view, deployment view).
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-There are many notations for describing scenarios, e.g.
-
--   numbered list of steps (in natural language)
-
--   activity diagrams or flow charts
-
--   sequence diagrams
-
--   BPMN or EPCs (event process chains)
-
--   state machines
-
--   …
-
-See [Runtime View](https://docs.arc42.org/section-6/) in the arc42
-documentation.
-
 ## \<Runtime Scenario 1>
 
--   *\<insert runtime diagram or textual description of the scenario>*
+![Alt text](image.png)
 
--   *\<insert description of the notable aspects of the interactions
-    between the building block instances depicted in this diagram.>*
+The UML Sequence Diagram for the EcoRide app booking process visually represents the interactions between three entities: the User's Device running the EcoRide App, the EcoRide Server, and the Driver's Device. The process begins with the user opening the app and entering their destination (Step 1). The server then responds by displaying ride options (Step 2). The user confirms their ride details (Step 3), prompting the server to send a ride request to a driver (Step 4). The driver accepts the request (Step 5), and the server sends a confirmation along with the estimated arrival time back to the user (Step 6). The outcome phase includes the user successfully booking the ride (Step 7) and the server providing an accurate arrival time (Step 8). This diagram effectively illustrates the sequential flow of actions and interactions, highlighting the system's responsiveness and the communication between the user, server, and driver in the ride-booking process.
 
 ## \<Runtime Scenario 2>
 
-## …
+![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
+
+This UML (Unified Modeling Language) sequence diagram represents the interaction between a Passenger, an EcoRide App, a Driver, and a GPS Service within a ride-sharing or taxi service context. The diagram begins with the Passenger initiating a real-time tracking feature in the app. Following this, the app sends a request for real-time tracking to the Driver, who then requests real-time location data from the GPS Service. The GPS Service sends the Driver's real-time location back to the Driver, who then sends this information to the EcoRide App.
+
+The EcoRide App calculates the Estimated Time of Arrival (ETA) and shows the Driver's current location to the Passenger. This information is continuously updated in a loop until the Driver reaches the destination. Finally, the Passenger is sent a notification that the ride is complete. The loop is marked with a condition stating "until Driver Reaches Destination Location," indicating that these steps repeat until the journey is concluded.
+
+
+
+
+
+
 
 ## \<Runtime Scenario n>
 
