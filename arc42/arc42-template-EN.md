@@ -524,7 +524,7 @@ Specifies the internal structure of *building block x.1*.
 
 ## \<Runtime Scenario 1>
 
-![Alt text](image.png)
+![Alt text](<Screenshot 2023-11-26 at 19.39.07-1.png>)
 
 The UML Sequence Diagram for the EcoRide app booking process visually represents the interactions between three entities: the User's Device running the EcoRide App, the EcoRide Server, and the Driver's Device. The process begins with the user opening the app and entering their destination (Step 1). The server then responds by displaying ride options (Step 2). The user confirms their ride details (Step 3), prompting the server to send a ride request to a driver (Step 4). The driver accepts the request (Step 5), and the server sends a confirmation along with the estimated arrival time back to the user (Step 6). The outcome phase includes the user successfully booking the ride (Step 7) and the server providing an accurate arrival time (Step 8). This diagram effectively illustrates the sequential flow of actions and interactions, highlighting the system's responsiveness and the communication between the user, server, and driver in the ride-booking process.
 
@@ -535,14 +535,6 @@ The UML Sequence Diagram for the EcoRide app booking process visually represents
 This UML (Unified Modeling Language) sequence diagram represents the interaction between a Passenger, an EcoRide App, a Driver, and a GPS Service within a ride-sharing or taxi service context. The diagram begins with the Passenger initiating a real-time tracking feature in the app. Following this, the app sends a request for real-time tracking to the Driver, who then requests real-time location data from the GPS Service. The GPS Service sends the Driver's real-time location back to the Driver, who then sends this information to the EcoRide App.
 
 The EcoRide App calculates the Estimated Time of Arrival (ETA) and shows the Driver's current location to the Passenger. This information is continuously updated in a loop until the Driver reaches the destination. Finally, the Passenger is sent a notification that the ride is complete. The loop is marked with a condition stating "until Driver Reaches Destination Location," indicating that these steps repeat until the journey is concluded.
-
-
-
-
-
-
-
-## \<Runtime Scenario n>
 
 <div style="page-break-after: always;"></div>
 
