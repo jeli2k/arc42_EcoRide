@@ -522,13 +522,13 @@ Specifies the internal structure of *building block x.1*.
 
 # Runtime View
 
-## \<Runtime Scenario 1>
+## Ride Booking
 
 ![Alt text](image.png)
 
 The UML Sequence Diagram for the EcoRide app booking process visually represents the interactions between three entities: the User's Device running the EcoRide App, the EcoRide Server, and the Driver's Device. The process begins with the user opening the app and entering their destination (Step 1). The server then responds by displaying ride options (Step 2). The user confirms their ride details (Step 3), prompting the server to send a ride request to a driver (Step 4). The driver accepts the request (Step 5), and the server sends a confirmation along with the estimated arrival time back to the user (Step 6). The outcome phase includes the user successfully booking the ride (Step 7) and the server providing an accurate arrival time (Step 8). This diagram effectively illustrates the sequential flow of actions and interactions, highlighting the system's responsiveness and the communication between the user, server, and driver in the ride-booking process.
 
-## \<Runtime Scenario 2>
+## Real-Time Driver Tracking
 
 ![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
 
