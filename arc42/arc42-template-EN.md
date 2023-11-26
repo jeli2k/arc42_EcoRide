@@ -459,15 +459,9 @@ The Runtime View of the ride-booking process visually outlines interactions amon
 
 ![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
 
-<<<<<<< HEAD
-This UML (Unified Modeling Language) sequence diagram represents the interaction between a Passenger, an EcoRide App, a Driver, and a GPS Service within a ride-sharing or taxi service context. The diagram begins with the Passenger initiating a real-time tracking feature in the app. Following this, the app sends a request for real-time tracking to the Driver, who then requests real-time location data from the GPS Service. The GPS Service sends the Driver's real-time location back to the Driver, who then sends this information to the EcoRide App.
-
-The EcoRide App calculates the Estimated Time of Arrival (ETA) and shows the Driver's current location to the Passenger. This information is continuously updated in a loop until the Driver reaches the destination. Finally, the Passenger is sent a notification that the ride is complete. The loop is marked with a condition stating "until Driver Reaches Destination Location," indicating that these steps repeat until the journey is concluded.
-=======
 The Runtime View of the Real-Time Driver Tracking captures the interaction dynamics involving a Passenger, the Ride-Sharing App, a Driver, and the GPS Service. It initiates with the Passenger activating real-time tracking in the app, triggering a sequence where the app requests real-time tracking from the Driver. Subsequently, the Driver seeks location data from the GPS Service, which is then relayed back to the Passenger through the app. Continuously updating the Estimated Time of Arrival (ETA), the EcoRide App ensures the Passenger remains informed about the Driver's location until the completion of the journey. The iterative process, marked by the condition 'until Driver Reaches Destination Location,' underscores the repetitive nature of these actions throughout the ride
 
 ## \<Runtime Scenario n>
->>>>>>> 805915662789376d00e63a0eb66431d7b0d10970
 
 <div style="page-break-after: always;"></div>
 
