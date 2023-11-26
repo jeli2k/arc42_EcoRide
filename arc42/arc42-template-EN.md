@@ -526,21 +526,13 @@ Specifies the internal structure of *building block x.1*.
 
 ![Alt text](image.png)
 
-The UML Sequence Diagram for the EcoRide app booking process visually represents the interactions between three entities: the User's Device running the EcoRide App, the EcoRide Server, and the Driver's Device. The process begins with the user opening the app and entering their destination (Step 1). The server then responds by displaying ride options (Step 2). The user confirms their ride details (Step 3), prompting the server to send a ride request to a driver (Step 4). The driver accepts the request (Step 5), and the server sends a confirmation along with the estimated arrival time back to the user (Step 6). The outcome phase includes the user successfully booking the ride (Step 7) and the server providing an accurate arrival time (Step 8). This diagram effectively illustrates the sequential flow of actions and interactions, highlighting the system's responsiveness and the communication between the user, server, and driver in the ride-booking process.
+The Runtime View of the ride-booking process visually outlines interactions among three entities: the User's Device with the App, the Server, and the Driver's Device. Users initiate the process by entering their destination (Step 1), leading to the server displaying ride options (Step 2). After confirming ride details (Step 3), the server sends a request to a driver (Step 4), followed by driver acceptance (Step 5). The server communicates confirmation and estimated arrival time to the user (Step 6). Successful ride booking (Step 7) and accurate arrival time (Step 8) conclude the process, emphasizing system responsiveness and seamless communication
 
 ## Real-Time Driver Tracking
 
 ![Alt text](<Screenshot 2023-11-26 at 19.39.07.png>)
 
-This UML (Unified Modeling Language) sequence diagram represents the interaction between a Passenger, an EcoRide App, a Driver, and a GPS Service within a ride-sharing or taxi service context. The diagram begins with the Passenger initiating a real-time tracking feature in the app. Following this, the app sends a request for real-time tracking to the Driver, who then requests real-time location data from the GPS Service. The GPS Service sends the Driver's real-time location back to the Driver, who then sends this information to the EcoRide App.
-
-The EcoRide App calculates the Estimated Time of Arrival (ETA) and shows the Driver's current location to the Passenger. This information is continuously updated in a loop until the Driver reaches the destination. Finally, the Passenger is sent a notification that the ride is complete. The loop is marked with a condition stating "until Driver Reaches Destination Location," indicating that these steps repeat until the journey is concluded.
-
-
-
-
-
-
+The Runtime View of the Real-Time Driver Tracking captures the interaction dynamics involving a Passenger, the Ride-Sharing App, a Driver, and the GPS Service. It initiates with the Passenger activating real-time tracking in the app, triggering a sequence where the app requests real-time tracking from the Driver. Subsequently, the Driver seeks location data from the GPS Service, which is then relayed back to the Passenger through the app. Continuously updating the Estimated Time of Arrival (ETA), the EcoRide App ensures the Passenger remains informed about the Driver's location until the completion of the journey. The iterative process, marked by the condition 'until Driver Reaches Destination Location,' underscores the repetitive nature of these actions throughout the ride
 
 ## \<Runtime Scenario n>
 
