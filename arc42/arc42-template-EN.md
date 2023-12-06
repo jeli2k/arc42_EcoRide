@@ -208,6 +208,8 @@ The following diagram provides a comprehensive view of the system's communicatio
 
 ## Technical Context
 
+<img src="images/DeploymentView.png">
+
 <div class="formalpara-title">
 
 **Contents**
@@ -477,6 +479,8 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 **Content**
 
 </div>
+
+<img src="images/DeploymentView.png" alt="Deployment View Diagram">
 
 The deployment view describes:
 
