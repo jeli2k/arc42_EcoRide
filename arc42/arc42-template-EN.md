@@ -80,6 +80,7 @@ Our Stakeholders and their expectations are:
     - As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience
 
 ## Requirements Overview
+This overview outlines the essential criteria for innovative, efficient, and environmentally responsible solutions.
 
 | Requirements                |  Explanation |
 |-----------------------------|---|
@@ -91,6 +92,7 @@ Our Stakeholders and their expectations are:
 | View Ride History           | Allows users to view their ride history, including details such as ride date, time, location, and payment information  |
 
 ## Quality Goals
+Our goals set the standard for excellence in sustainable transportation, focusing on unparalleled innovation, reliability, and environmental integrity.
 
 | Priority   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
@@ -99,6 +101,7 @@ Our Stakeholders and their expectations are:
 | *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
 
 ## Stakeholders
+EcoRide values the diverse perspectives and contributions of its stakeholders, and this section is dedicated to understanding and aligning with their interests and expectations, fostering a collaborative and sustainable future.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
@@ -125,6 +128,7 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 
 ## Architecture Decisions
+These Architecture Decisions reflect our commitment to sustainable innovation, detailing the strategic choices that shape our transportation solutions.
 <div class="formalpara-title">
 
 
@@ -140,6 +144,7 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 
 ## Risks and Technical Debt
+EcoRide is committed to identifying and addressing potential risks and technical debts in our operations, with a focus on implementing robust strategies to overcome challenges. In the following, we detail specific areas of concern, such as NoSQL database management, cloud-based infrastructure, and reliance on third-party services, along with our targeted strategies for each. 
 <div class="formalpara-title">
 
 </div>
@@ -159,6 +164,8 @@ These constraints encompass various elements, from infrastructure choices to dat
 <div class="formalpara-title">
 
 This overview encapsulates EcoRide's engagement with its operational and technical spheres, detailing user interactions and system infrastructure.
+
+-   Lists of communication partners and their interfaces.
 
 ## Business Context
 
@@ -213,26 +220,11 @@ documentation.-->
 
 The Building Block View offers a structured snapshot of our system's architecture, breaking down key components and their interconnections to provide a comprehensive understanding of how EcoRide's functionalities are organized and interact
 
-**Level 1**
+## Whitebox Overall System
 
 This level serves as an overview of the entire system. It showcases the core components, such as FileSystemStorage, Cars, Rides, Profile and more. This level explains the interactions between these components, revealing how users access the system, how data flows between different servers or services, and how external systems communicate with the system.
 
 ![Level 1 of the Building Blocks Hierachy](images/level1-Page-1.jpg)
-
-**Level 2**
-
-Level 2 goes deeper into the system than Level 1. It shows more details about each part like servers, databases, and software. It explains how these parts work together, detailing specific server setups, database designs, and software functions. This level covers how data moves between different parts, and how outside systems connect. It's a closer look at how things work inside the system beyond the basic structure.
-
-![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
-
-**Level 3**
-
-This level dives even deeper into the system. It gets more detailed about the CarsController mentioned in Level 2. This level shows exactly how the CarsController is set up and the external APIs
-
-![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
-
-
-## Whitebox Overall System
 
 Here you describe the decomposition of the overall system using the
 following white box template. It contains
@@ -261,8 +253,6 @@ following white box template. It contains
     protocols, error handling, restrictions, versions, qualities,
     necessary compatibilities and many things more. In the best case you
     will get away with examples or simple signatures.
-
-***\<Overview Diagram>***
 
 Motivation  
 *\<text explanation>*
@@ -336,6 +326,10 @@ template:
 
 ## Level 2
 
+The Level 2 view delves into the "Cars" component, which comprises the following components: ChartsService, CarsController, CarsRepository, and CarsInsuranceRepository. Notably, the ChartsService component is linked to the charts API and the CarsController component is linked to the cars API.
+
+![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
+
 Here you can specify the inner structure of (some) building blocks from
 level 1 as white boxes.
 
@@ -362,6 +356,10 @@ standardized parts of your system
 *\<white box template>*
 
 ## Level 3
+
+This level dives even deeper into the system. It gets more detailed about the CarsController mentioned in Level 2. This level shows exactly how the CarsController is set up and its communication with external APIs.
+
+![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
 
 Here you can specify the inner structure of (some) building blocks from
 level 2 as white boxes.
@@ -407,6 +405,11 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 <div class="formalpara-title">
 
+<<<<<<< HEAD
+The following diagram emphasizes meticulous planning and efficient execution in deploying our sustainable transportation solutions. 
+
+=======
+>>>>>>> befae3a937c117ecc5a30a0858274d643fc2d795
 </div>
 
 
@@ -623,6 +626,7 @@ Our Quality Tree consists of the values reliability, user-friendliness, and data
 
 
 ## Quality Scenarios
+EcoRide rigorously tests against a range of realistic, challenging situations to ensure our transportation solutions consistently meet the highest standards of efficiency, sustainability, and user satisfaction.
 
 **Reliability**
 
@@ -744,3 +748,7 @@ documentation.
 |-------------|-------------------|
 | *\<Term-1>* | *\<definition-1>* |
 | *\<Term-2>* | *\<definition-2>* |
+|         a    |a|
+|       a      |a|
+|      a       |a|
+|     a        |a|
