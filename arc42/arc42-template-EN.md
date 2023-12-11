@@ -157,6 +157,8 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 <div class="formalpara-title">
 
+This overview encapsulates EcoRide's engagement with its operational and technical spheres, detailing user interactions and system infrastructure.
+
 -   Lists of communication partners and their interfaces.
 
 ## Business Context
@@ -399,7 +401,7 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 </div>
 
-<img src="images/DeploymentView.png" alt="Deployment View Diagram">
+
 
 The deployment view describes:
 
@@ -469,7 +471,8 @@ Describe (usually in a combination of diagrams, tables, and text):
 For multiple environments or alternative deployments please copy and
 adapt this section of arc42 for all relevant environments.
 
-***\<Overview Diagram>***
+<img src="images/DeploymentView-Level1.drawio.png" alt="Deployment View Diagram">
+
 
 Motivation  
 *\<explanation in text form>*
@@ -483,9 +486,13 @@ Mapping of Building Blocks to Infrastructure
 ## Infrastructure Level 2
 
 Here you can include the internal structure of (some) infrastructure
-elements from level 1.
+elements from level1.
 
 Please copy the structure from level 1 for each selected element.
+
+<img src="images/DeploymentView.png" alt="Deployment View Diagram">
+
+
 
 ### *\<Infrastructure Element 1>*
 
