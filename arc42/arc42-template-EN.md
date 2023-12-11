@@ -101,7 +101,7 @@ Our goals set the standard for excellence in sustainable transportation, focusin
 | *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
 
 ## Stakeholders
-EcoRide values the diverse perspectives and contributions of its stakeholders, and this section is dedicated to understanding and aligning with their interests and expectations, fostering a collaborative and sustainable future.
+This section is dedicated to understanding and aligning with their interests and expectations, fostering a collaborative and sustainable future.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
@@ -404,11 +404,8 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 <div class="formalpara-title">
 
-<<<<<<< HEAD
 The following diagram emphasizes meticulous planning and efficient execution in deploying our sustainable transportation solutions. 
 
-=======
->>>>>>> befae3a937c117ecc5a30a0858274d643fc2d795
 </div>
 
 
@@ -528,7 +525,7 @@ These cross-cutting concepts play a pivotal role in establishing and maintaining
 
 ### *User Experience (UX)*
 
-User Experience, often abbreviated as UX, focuses on creating a positive and seamless interaction between users and a digital product or service.
+User Experience focuses on creating a positive and seamless interaction between users and a digital product or service.
 
 It encompasses various aspects, including the consistency of design and functionality, the representation of branding elements and logos, app navigation that ensures easy and intuitive user journeys, user authentication processes, push notifications for timely updates, geolocation and maps for location-based services, the flow for booking rides, payment processing, offline functionality to maintain usability without an internet connection, and a 5-star rating system with optional comments to gather user feedback. 
 
@@ -552,51 +549,18 @@ This involves implementing data encryption techniques to protect sensitive infor
 
 # Architecture Decisions
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Important, expensive, large scale or risky architecture decisions
-including rationales. With "decisions" we mean selecting one alternative
-based on given criteria.
-
-Please use your judgement to decide whether an architectural decision
-should be documented here in this central section or whether you better
-document it locally (e.g. within the white box template of one building
-block).
-
-Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture.
+This table offers an in-depth examination of key architecture decisions, shedding light on both high-priority choices previously mentioned and two additional significant decisions, Payment System Integration and User Authentication and Authorization, contributing to the overall development trajectory of our innovative ride-sharing platform.
 
 <div class="formalpara-title">
 
-**Motivation**
+| Title | Context | Decision | Status | Consequences |
+|---|---|---|---|---|
+| **Database Selection** | Evaluating SQL, Maria DB, Oracle, and NoSQL options for the system's database | NoSQL | Proposed | **Positives**: <br> Cost-effective solution - Scalability to handle increasing data volume - High availability for robust performance - Compatibility with diverse cloud services - Smooth migration process <br> **Negatives**: <br> Learning curve for NoSQL may impact initial development speed, Potential data consistency challenges due to flexibility, Requires careful planning for effective scaling |
+| **Infrastructure Model** | Choosing between Cloud-Based, On-Premise Infrastructure, and Edge Computing | Cloud-Based | Proposed | **Positive**: On-demand scalability and flexibility, Cost-effectiveness with no upfront capital costs, Pay-as-you-go model for financial management, Enhanced data security measures, High availability <br> **Negative**: Dependency on third-party cloud services, Potential service outages affecting system availability, Data transfer costs and security concerns, Limited physical control over infrastructure |
+| **Data Processing Model** | Selecting the appropriate data processing model among Batch Processing, Stream Processing, and Lambda Architecture | Real-Time Data Processing | Proposed | **Positive**: Immediate updates and responses for enhanced user experience, Real-time decision-making capabilities, Competitive advantage in responsiveness and decision speed <br> **Negative**: Increased system complexity, Additional computational resources required for real-time processing, Potential challenges in implementing and maintaining real-time features |
+| **Payment System Integration** | Determining the approach for integrating a payment system within the EcoRide app, choosing between an in-house payment system development or third-party payment gateway integration | Third-party payment gateway integration | Proposed | **Positive**: Seamless and secure transaction processing, Enhanced user trust through established payment gateways <br> **Negative**: Dependency on external payment service providers, Transaction fees may impact overall operating costs |
+| **User Authentication and Authorization** | Selecting the strategy for user authentication and authorization within the EcoRide system, among traditional username/password authentication, social media login integration and/or multi-factor authentication | Multi-factor authentication with social media login integration | Proposed | **Positive**: Improved security with multi-factor authentication, Enhanced user convenience through social media login options <br> **Negative**: Potential user resistance to additional authentication steps, Dependency on external social media platforms for login |
 
-</div>
-
-Stakeholders of your system should be able to comprehend and retrace
-your decisions.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   ADR ([Documenting Architecture
-    Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    for every important decision
-
--   List or table, ordered by importance and consequences or:
-
--   more detailed in form of separate sections per decision
-
-See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
-arc42 documentation. There you will find links and examples about ADR.
 
 <div style="page-break-after: always;"></div>
 
@@ -629,30 +593,30 @@ EcoRide rigorously tests against a range of realistic, challenging situations to
 
 **Reliability**
 
-Real-time Transaction Latency
+Real-time Transaction Latency: <br>
 A user initiates a ride booking transaction. Under normal operations the system maintains an average latency of two seconds or better for processing all ride booking transactions, consistently falling within the acceptable range of 1.5 to 2.5 seconds
 
-Accurate ETA and Tracking
+Accurate ETA and Tracking: <br>
 A user wants an accurate and reliable estimated time of arrival (ETA) and real-time tracking of drivers at runtime. 
 The system consistently provides this information and checks the provided information with ride completion times, passenger feedback and tracking data, to confirm that the displayed ETAs align with actual arrival times
 
 **User-friendliness**
 
-Intuitive App Interface
+Intuitive App Interface: <br>
 A user wants to switch seamlessly between devices, sign in or register quickly and wants to request rides without manually entering their location.
 The system provides a uniform, intuitive interface with a hamburger icon for additional settings. It requires only email and password for login and registration and auto-tracks the user's location for ride requests in a few seconds.
 
-Efficient Customer Support
+Efficient Customer Support: <br>
 A user encounters an application error during the live-phase and seeks assistance. 
 The system provides swift and efficient customer support which takes a maximum of 10 minutes, additionally the system includes a FAQ and live chat support, and automatically opens a new ticket for each issue.
 
 **Data Security**
 
-Privacy Compliance
+Privacy Compliance: <br>
 The developer wants to adapt the system after data protection regulations have been breached or new laws have been passed. The system is updated to solve security measurements and undergoes weekly reviews to implement preventive measures. 
 
 
-Secure Payment Processing
+Secure Payment Processing: <br>
 A user who conducts a payment transaction wants secure handling of the payment data. 
 The system confirms secure processing of user payment data through robust encryption, weekly security audits and penetration testing 
 
