@@ -117,6 +117,11 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 <!-- See [Architecture Constraints](https://docs.arc42.org/section-2/) in the arc42 documentation.-->
 
+| Context | Decision | Consequences |
+|---|---|---|
+| The necessity for operational flexibility, cost-effectiveness, and heightened security drives the decision to adopt a Cloud-Based Infrastructure | We will use a Cloud Based Infrastructure to max out efficiency, reduce costs, increase agility, improve accessibility and enhance security | On demand scalability and flexibility, no upfront capital costs for buying hardware, improved Data Security. Service availability in cloud infrastructure varies by provider and design, requiring a commitment to ensure consistent uptime. Furthermore Third-party dependencies, data transfer costs and security concerns, limited control over physical hardware |
+| The need for flexibility in handling dynamic data, coupled with challenges related to potential data inconsistency and the nuanced trade-offs of the CAP theorem, as well as the demands for high data volume and scalability, influence the decision to employ a NoSQL Database. | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to handle unstructured or semi-structured data, achieve horizontal scalability, and attain high read and write throughput contributes to improved application performance and responsiveness. However, this flexibility may lead to data inconsistency. The use of NoSQL may require careful planning to scale effectively, and trade-offs outlined by the CAP theorem can impact performance and/or strong consistency |
+| Concerns, in managing a dynamic system, arise from the balance required between swift decision-making, consistency, and reliability, all of which are crucial for ensuring user satisfaction and safety | We will use Real Time Data Processing, to enable immediate analysis and response to incoming data | Immediate updates and responses to users, enables real time decision making, competitive advantage. Implementing real-time data processing features adds complexity, requires additional computational resources |
 
 | Context | Decision | Consequences |
 |---|---|---|
@@ -209,6 +214,10 @@ The following diagram provides a comprehensive view of the system's communicatio
 ## Technical Context
 
 <div class="formalpara-title">
+
+Understanding EcoRide's technological landscape involves delving into the fundamental elements that shape our RideSharing platform. This includes the intricate interplay of technologies, infrastructure, and environments that collectively define the technical context of the App, shown in the following diagram:
+
+<img src="images/DeploymentView.png">
 
 **Contents**
 
