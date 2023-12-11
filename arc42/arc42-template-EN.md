@@ -126,14 +126,6 @@ These constraints encompass various elements, from infrastructure choices to dat
 | The need for flexibility in handling dynamic data, coupled with challenges related to potential data inconsistency and the nuanced trade-offs of the CAP theorem, as well as the demands for high data volume and scalability, influence the decision to employ a NoSQL Database. | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to handle unstructured or semi-structured data, achieve horizontal scalability, and attain high read and write throughput contributes to improved application performance and responsiveness. However, this flexibility may lead to data inconsistency. The use of NoSQL may require careful planning to scale effectively, and trade-offs outlined by the CAP theorem can impact performance and/or strong consistency |
 | Concerns, in managing a dynamic system, arise from the balance required between swift decision-making, consistency, and reliability, all of which are crucial for ensuring user satisfaction and safety | We will use Real Time Data Processing, to enable immediate analysis and response to incoming data | Immediate updates and responses to users, enables real time decision making, competitive advantage. Implementing real-time data processing features adds complexity, requires additional computational resources |
 
-| Context | Decision | Consequences |
-|---|---|---|
-| Location independence, Budget friendly, Physical security and Data Security | We will use a Cloud Based Infrastructure to max out efficiency, reduce costs, increase agility, improve accessibility and enhance security | On demand scalability and flexibility, no upfront capital costs buying hardware, improved Data Security, Service availability in cloud infrastructure varies by provider and design, requiring a commitment to ensure consistent uptime. Third-party dependency, data transfer costs and security concern, no physical control over hardware |
-| High Data Volume, Availability and Scalability and concerns | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to use unstructured or semi-structured data, horizontal scalability, high read and write throughput, improved application performance and responsiveness. Flexibility can lead to data inconsistency, NoSQL may require careful planning to scale effectively, CAP theorem trade-offs can impact performance and/or strong consistency |
-| Importance of Dynamic-Routing, Customer-Experience, Safety and Security | We will use Real Time Data Processing, to enable immediate analysis and response to incoming data | Immediate updates and responses to users, enables real time decision making, competitive advantage. Implementing real-time data processing features adds complexity, requires additional computational resources |
-
-
-
 
 ## Architecture Decisions
 These Architecture Decisions reflect our commitment to sustainable innovation, detailing the strategic choices that shape our transportation solutions.
@@ -170,42 +162,7 @@ EcoRide is committed to identifying and addressing potential risks and technical
 
 <div class="formalpara-title">
 
-**Contents**
-
-</div>
-
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
+This overview encapsulates EcoRide's engagement with its operational and technical spheres, detailing user interactions and system infrastructure.
 
 ## Business Context
 
@@ -218,48 +175,12 @@ The following diagram provides a comprehensive view of the system's communicatio
 
 ## Technical Context
 
-<img src="images/DeploymentView.png">
-
-<div class="formalpara-title">
-
 Understanding EcoRide's technological landscape involves delving into the fundamental elements that shape our RideSharing platform. This includes the intricate interplay of technologies, infrastructure, and environments that collectively define the technical context of the App, shown in the following diagram:
 
-<img src="images/DeploymentView.png">
-
-**Contents**
-
-</div>
-
-Technical interfaces (channels and transmission media) linking your
-system to its environment. In addition a mapping of domain specific
-input/output to the channels, i.e. an explanation which I/O uses which
-channel.
+<img src="images/TechnicalContext.png">
 
 <div class="formalpara-title">
 
-**Motivation**
-
-</div>
-
-Many stakeholders make architectural decision based on the technical
-interfaces between the system and its context. Especially infrastructure
-or hardware designers decide these technical interfaces.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-E.g. UML deployment diagram describing channels to neighboring systems,
-together with a mapping table showing the relationships between channels
-and input/output.
-
-**\<Diagram or Table>**
-
-**\<optionally: Explanation of technical interfaces>**
-
-**\<Mapping Input/Output to Channels>**
 
 <div style="page-break-after: always;"></div>
 
@@ -470,7 +391,7 @@ Specifies the internal structure of *building block x.1*.
 
 # Runtime View
 
-The Runtime View provides a dynamic perspective on our system's operation, detailing the seamless interactions during the ride-booking process and real-time driver tracking. These visualizations showcase the responsive and communicative nature of EcoRide
+The Runtime View provides a dynamic perspective on our system's operation, detailing the seamless interactions during the ride-booking process and real-time driver tracking. These visualizations showcase the responsive and communicative nature of EcoRide:
 
 ## Runtime Scenario: Ride Booking
 
@@ -490,11 +411,14 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 <div class="formalpara-title">
 
+<<<<<<< HEAD
 The following diagram emphasizes meticulous planning and efficient execution in deploying our sustainable transportation solutions. 
 
+=======
+>>>>>>> befae3a937c117ecc5a30a0858274d643fc2d795
 </div>
 
-<img src="images/DeploymentView.png" alt="Deployment View Diagram">
+
 
 The deployment view describes:
 
@@ -564,7 +488,8 @@ Describe (usually in a combination of diagrams, tables, and text):
 For multiple environments or alternative deployments please copy and
 adapt this section of arc42 for all relevant environments.
 
-***\<Overview Diagram>***
+<img src="images/DeploymentView-Level1.drawio.png" alt="Deployment View Diagram">
+
 
 Motivation  
 *\<explanation in text form>*
@@ -578,9 +503,13 @@ Mapping of Building Blocks to Infrastructure
 ## Infrastructure Level 2
 
 Here you can include the internal structure of (some) infrastructure
-elements from level 1.
+elements from level1.
 
 Please copy the structure from level 1 for each selected element.
+
+<img src="images/DeploymentView.png" alt="Deployment View Diagram">
+
+
 
 ### *\<Infrastructure Element 1>*
 
