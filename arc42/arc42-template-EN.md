@@ -404,11 +404,8 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 <div class="formalpara-title">
 
-<<<<<<< HEAD
 The following diagram emphasizes meticulous planning and efficient execution in deploying our sustainable transportation solutions. 
 
-=======
->>>>>>> befae3a937c117ecc5a30a0858274d643fc2d795
 </div>
 
 
@@ -701,41 +698,31 @@ the arc42 documentation.
 # Glossary
 
 <div class="formalpara-title">
-
-**Contents**
-
 </div>
 
-The most important domain and technical terms that your stakeholders use
-when discussing the system.
-
-You can also see the glossary as source for translations if you work in
-multi-language teams.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-You should clearly define your terms, so that all stakeholders
-
--   have an identical understanding of these terms
-
--   do not use synonyms and homonyms
-
-A table with columns \<Term> and \<Definition>.
-
-Potentially more columns in case you need translations.
-
-See [Glossary](https://docs.arc42.org/section-12/) in the arc42
-documentation.
 
 | Term        | Definition        |
 |-------------|-------------------|
-| *\<Term-1>* | *\<definition-1>* |
-| *\<Term-2>* | *\<definition-2>* |
-|         a    |a|
-|       a      |a|
-|      a       |a|
-|     a        |a|
+| MySQL | is a popular open-source relational database management system (RDBMS), known for its reliability, performance, and ease of use in web-based applications.
+| API |An Application Programming Interface is a program component provided by a software system to allow other programs to connect and interface with the system.
+| REST | or Representational State Transfer, is an architectural style for designing networked applications, relying on stateless, client-server communication, primarily used for building web services. |
+|         Github Repository    |is a centralized online location for storing, managing, version-controlling, and collaborating on code or project files, integrated with Git and offering features like issue tracking and pull requests.|
+|       Jira      |is a project management tool designed for agile teams, featuring issue tracking, task management, sprint planning, and workflow customization.|
+|      Confluence       |is a collaboration platform for team documentation, knowledge sharing, project collaboration, and integration with Jira for enhanced team coordination.|
+|     IDE        |or Integrated Development Environment, is a software suite that combines code editing, compiling, debugging, and development tools into a single user interface.|
+|       Docker      |is a platform for developing, shipping, and running applications in isolated containers, enabling software to work uniformly across different environments.|
+|      Kubernetes       |is a container orchestration system for automating application deployment, scaling, and management, supporting cluster management and load balancing.|
+|     Jenkins        |is an open-source automation server used for continuous integration and continuous delivery (CI/CD), supporting various build, test, and deployment tasks.|
+|       Postman      |is a popular API (Application Programming Interface) development tool used for building, testing, and documenting APIs, with support for various HTTP methods and API protocols.|
+|      JUnit       |is a framework for Java programming, designed for the purpose of writing and running repeatable automated tests to ensure code quality.|
+|     React        |is a JavaScript library for building dynamic user interfaces, emphasizing declarative components, virtual DOM, and efficient data handling for web and mobile apps.|
+|       Angular      |is a TypeScript-based framework for creating scalable web applications, featuring robust tools for two-way data binding, MVC architecture, and rich interactive components.|
+|      Spring Boot       |is a Java-based framework that simplifies the development of stand-alone, production-grade applications with minimal configuration, emphasizing convention over configuration, embedded server support, and a wide range of extensions.|
+|     Retrofit        |is a type-safe HTTP client for Android and Java, designed for consuming RESTful web services with ease, supporting JSON/XML converters, custom requests, and synchronous/asynchronous calls.|
+|     Alamofire        |is a Swift-based HTTP networking library for iOS and macOS, providing an easy-to-use interface for making network requests, handling JSON data, file uploads, and network response validation.|
+|     Swift        |is a powerful, Apple-developed programming language for iOS, macOS, watchOS, and tvOS, emphasizing safety, performance, and modern syntax for building responsive and user-friendly applications.|
+|     Kotlin        |is a statically typed programming language for modern multiplatform applications, known for its concise syntax, interoperability with Java, and support for Android development, functional programming, and coroutines.|
+|     Apache        |often referring to the Apache HTTP Server, is a widely-used web server software, known for its role in the LAMP stack, flexibility, security features, and support for various modules and scripting languages.|
+|     Firewall        |is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules, providing a barrier between a trusted and an untrusted network.|
+
+
