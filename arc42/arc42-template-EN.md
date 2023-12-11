@@ -1,4 +1,3 @@
-# 
 
 # RideShare: EcoRide
 
@@ -101,7 +100,7 @@ Our goals set the standard for excellence in sustainable transportation, focusin
 | *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
 
 ## Stakeholders
-EcoRide values the diverse perspectives and contributions of its stakeholders, and this section is dedicated to understanding and aligning with their interests and expectations, fostering a collaborative and sustainable future.
+This section is dedicated to understanding and aligning with their interests and expectations, fostering a collaborative and sustainable future.
 
 | Role/Name   | Contact        | Expectations       |
 |-------------|----------------|--------------------|
@@ -122,13 +121,13 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 | Context | Decision | Consequences |
 |---|---|---|
-| The necessity for operational flexibility, cost-effectiveness, and heightened security drives the decision to adopt a Cloud-Based Infrastructure | We will use a Cloud Based Infrastructure to max out efficiency, reduce costs, increase agility, improve accessibility and enhance security | On demand scalability and flexibility, no upfront capital costs for buying hardware, improved Data Security. Service availability in cloud infrastructure varies by provider and design, requiring a commitment to ensure consistent uptime. Furthermore Third-party dependencies, data transfer costs and security concerns, limited control over physical hardware |
-| The need for flexibility in handling dynamic data, coupled with challenges related to potential data inconsistency and the nuanced trade-offs of the CAP theorem, as well as the demands for high data volume and scalability, influence the decision to employ a NoSQL Database. | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to handle unstructured or semi-structured data, achieve horizontal scalability, and attain high read and write throughput contributes to improved application performance and responsiveness. However, this flexibility may lead to data inconsistency. The use of NoSQL may require careful planning to scale effectively, and trade-offs outlined by the CAP theorem can impact performance and/or strong consistency |
+|The imperative for operational flexibility, cost-effectiveness, and heightened security guides the decision to adopt an infrastructure that aligns with the specific needs of our system | We will use a Cloud Based Infrastructure to max out efficiency, reduce costs, increase agility, improve accessibility and enhance security | On demand scalability and flexibility, no upfront capital costs for buying hardware, improved Data Security. Service availability in cloud infrastructure varies by provider and design, requiring a commitment to ensure consistent uptime. Furthermore Third-party dependencies, data transfer costs and security concerns, limited control over physical hardware |
+| The need for flexibility in handling dynamic data, coupled with challenges related to potential data inconsistency and the nuanced trade-offs of the CAP theorem, as well as the demands for high data volume and scalability, influence the decision to employ a database solution suited to our specific data characteristics | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to handle unstructured or semi-structured data, achieve horizontal scalability, and attain high read and write throughput contributes to improved application performance and responsiveness. However, this flexibility may lead to data inconsistency. The use of NoSQL may require careful planning to scale effectively, and trade-offs outlined by the CAP theorem can impact performance and/or strong consistency |
 | Concerns, in managing a dynamic system, arise from the balance required between swift decision-making, consistency, and reliability, all of which are crucial for ensuring user satisfaction and safety | We will use Real Time Data Processing, to enable immediate analysis and response to incoming data | Immediate updates and responses to users, enables real time decision making, competitive advantage. Implementing real-time data processing features adds complexity, requires additional computational resources |
 
 
 ## Architecture Decisions
-These Architecture Decisions reflect our commitment to sustainable innovation, detailing the strategic choices that shape our transportation solutions.
+These Architecture Decisions reflect our commitment to sustainable innovation, detailing the strategic choices that shape our transportation solutions. The following three are the ones with the highest priority:
 <div class="formalpara-title">
 
 
@@ -151,20 +150,19 @@ EcoRide is committed to identifying and addressing potential risks and technical
 
 | Risk/Technical Debt   | Description |
 |-------------|----------------|
-| *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.<br>-Using ACID Transactions to maintain data consistency<br>-By implementing a microservices-based architectural approach, we aim to ensure the horizontal scalability and elasticity of our processing system, allowing us to effortlessly handle growing data volumes and sudden spikes in demand efficiently.*  | 
-| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. To effectively address these challenges, consider these key elements:<br>-Traffic Testing: Ensure your system can handle variable traffic loads, from regular usage to peak demand.<br>-Workload Planning: Optimize costs by accurately provisioning resources based on your application's needs.<br>-Incident Response Planning: Develop a clear plan to swiftly respond to service outages or security incidents.<br>-Security Audits: Regularly assess your IaaS security to identify and mitigate vulnerabilities.<br>* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
-| *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.<br>-Optimize Service Usage and Contracts: Actively monitor service usage to identify cost-saving opportunities and negotiate cost-effective contracts with service providers.<br>-Prepare for Service Outages: Develop contingency plans to ensure business continuity during service outages, including strategies for graceful degradation and backup solutions.* | 
+| *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.*  | 
+| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
+| *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.* | 
 
 
 <div style="page-break-after: always;"></div>
+
 
 # System Scope and Context
 
 <div class="formalpara-title">
 
 This overview encapsulates EcoRide's engagement with its operational and technical spheres, detailing user interactions and system infrastructure.
-
--   Lists of communication partners and their interfaces.
 
 ## Business Context
 
@@ -525,7 +523,7 @@ These cross-cutting concepts play a pivotal role in establishing and maintaining
 
 ### *User Experience (UX)*
 
-User Experience, often abbreviated as UX, focuses on creating a positive and seamless interaction between users and a digital product or service.
+User Experience focuses on creating a positive and seamless interaction between users and a digital product or service.
 
 It encompasses various aspects, including the consistency of design and functionality, the representation of branding elements and logos, app navigation that ensures easy and intuitive user journeys, user authentication processes, push notifications for timely updates, geolocation and maps for location-based services, the flow for booking rides, payment processing, offline functionality to maintain usability without an internet connection, and a 5-star rating system with optional comments to gather user feedback. 
 
@@ -549,51 +547,18 @@ This involves implementing data encryption techniques to protect sensitive infor
 
 # Architecture Decisions
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-Important, expensive, large scale or risky architecture decisions
-including rationales. With "decisions" we mean selecting one alternative
-based on given criteria.
-
-Please use your judgement to decide whether an architectural decision
-should be documented here in this central section or whether you better
-document it locally (e.g. within the white box template of one building
-block).
-
-Avoid redundancy. Refer to section 4, where you already captured the
-most important decisions of your architecture.
+This table offers an in-depth examination of key architecture decisions, shedding light on both high-priority choices previously mentioned and two additional significant decisions, Payment System Integration and User Authentication and Authorization, contributing to the overall development trajectory of our innovative ride-sharing platform.
 
 <div class="formalpara-title">
 
-**Motivation**
+| Title | Context | Decision | Status | Consequences |
+|---|---|---|---|---|
+| **Database Selection** | Evaluating SQL, Maria DB, Oracle, and NoSQL options for the system's database | NoSQL | Proposed | **Positives**: <br> Cost-effective solution - Scalability to handle increasing data volume - High availability for robust performance - Compatibility with diverse cloud services - Smooth migration process <br> **Negatives**: <br> Learning curve for NoSQL may impact initial development speed, Potential data consistency challenges due to flexibility, Requires careful planning for effective scaling |
+| **Infrastructure Model** | Choosing between Cloud-Based, On-Premise Infrastructure, and Edge Computing | Cloud-Based | Proposed | **Positive**: On-demand scalability and flexibility, Cost-effectiveness with no upfront capital costs, Pay-as-you-go model for financial management, Enhanced data security measures, High availability <br> **Negative**: Dependency on third-party cloud services, Potential service outages affecting system availability, Data transfer costs and security concerns, Limited physical control over infrastructure |
+| **Data Processing Model** | Selecting the appropriate data processing model among Batch Processing, Stream Processing, and Lambda Architecture | Real-Time Data Processing | Proposed | **Positive**: Immediate updates and responses for enhanced user experience, Real-time decision-making capabilities, Competitive advantage in responsiveness and decision speed <br> **Negative**: Increased system complexity, Additional computational resources required for real-time processing, Potential challenges in implementing and maintaining real-time features |
+| **Payment System Integration** | Determining the approach for integrating a payment system within the EcoRide app, choosing between an in-house payment system development or third-party payment gateway integration | Third-party payment gateway integration | Proposed | **Positive**: Seamless and secure transaction processing, Enhanced user trust through established payment gateways <br> **Negative**: Dependency on external payment service providers, Transaction fees may impact overall operating costs |
+| **User Authentication and Authorization** | Selecting the strategy for user authentication and authorization within the EcoRide system, among traditional username/password authentication, social media login integration and/or multi-factor authentication | Multi-factor authentication with social media login integration | Proposed | **Positive**: Improved security with multi-factor authentication, Enhanced user convenience through social media login options <br> **Negative**: Potential user resistance to additional authentication steps, Dependency on external social media platforms for login |
 
-</div>
-
-Stakeholders of your system should be able to comprehend and retrace
-your decisions.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   ADR ([Documenting Architecture
-    Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions))
-    for every important decision
-
--   List or table, ordered by importance and consequences or:
-
--   more detailed in form of separate sections per decision
-
-See [Architecture Decisions](https://docs.arc42.org/section-9/) in the
-arc42 documentation. There you will find links and examples about ADR.
 
 <div style="page-break-after: always;"></div>
 
@@ -626,30 +591,30 @@ EcoRide rigorously tests against a range of realistic, challenging situations to
 
 **Reliability**
 
-Real-time Transaction Latency
+Real-time Transaction Latency: <br>
 A user initiates a ride booking transaction. Under normal operations the system maintains an average latency of two seconds or better for processing all ride booking transactions, consistently falling within the acceptable range of 1.5 to 2.5 seconds
 
-Accurate ETA and Tracking
+Accurate ETA and Tracking: <br>
 A user wants an accurate and reliable estimated time of arrival (ETA) and real-time tracking of drivers at runtime. 
 The system consistently provides this information and checks the provided information with ride completion times, passenger feedback and tracking data, to confirm that the displayed ETAs align with actual arrival times
 
 **User-friendliness**
 
-Intuitive App Interface
+Intuitive App Interface: <br>
 A user wants to switch seamlessly between devices, sign in or register quickly and wants to request rides without manually entering their location.
 The system provides a uniform, intuitive interface with a hamburger icon for additional settings. It requires only email and password for login and registration and auto-tracks the user's location for ride requests in a few seconds.
 
-Efficient Customer Support
+Efficient Customer Support: <br>
 A user encounters an application error during the live-phase and seeks assistance. 
 The system provides swift and efficient customer support which takes a maximum of 10 minutes, additionally the system includes a FAQ and live chat support, and automatically opens a new ticket for each issue.
 
 **Data Security**
 
-Privacy Compliance
+Privacy Compliance: <br>
 The developer wants to adapt the system after data protection regulations have been breached or new laws have been passed. The system is updated to solve security measurements and undergoes weekly reviews to implement preventive measures. 
 
 
-Secure Payment Processing
+Secure Payment Processing: <br>
 A user who conducts a payment transaction wants secure handling of the payment data. 
 The system confirms secure processing of user payment data through robust encryption, weekly security audits and penetration testing 
 
@@ -658,40 +623,15 @@ The system confirms secure processing of user payment data through robust encryp
 
 # Risks and Technical Debts
 
-<div class="formalpara-title">
+This section delves deeper into the potential risks and technical debts, addressing the challenges and uncertainties that may impact the seamless development and operation in more detail.
 
-**Contents**
-
-</div>
-
-A list of identified technical risks or technical debts, ordered by
-priority
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
+| Risk/Technical Debt Category | Risk/Technical Debt Description | Suggested Measures |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NoSQL Database & Real Time Data Processing           | NoSQL databases introduce challenges related to data consistency, complex queries, and developer learning curves.                                                    | - Use ACID Transactions to maintain data consistency.<br>- Implement a microservices-based architectural approach for horizontal scalability and to handle growing data volumes and demand spikes efficiently.                               |
+| Using Cloud Based Infrastructure                     | The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies.                                   | - Conduct Traffic Testing to ensure the system can handle variable traffic loads.<br>- Engage in Workload Planning to optimize costs by accurately provisioning resources.<br>- Develop an Incident Response Plan for swift action during service outages or security incidents.<br>- Perform Security Audits to regularly assess IaaS security. |
+| Dependency on Third-Party Services                   | Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.                     | - Optimize Service Usage and Contracts by actively monitoring service usage to identify cost-saving opportunities and negotiate cost-effective contracts.<br>- Prepare for Service Outages with contingency plans to ensure business continuity, including strategies for graceful degradation and backup solutions.                     |
+|    Payment System Integration                | Dependence on third-party payment service providers may introduce risks such as lack of control over the payment processing, potential for service downtime, and transaction fees affecting profitability.                     | - Establish Service Level Agreements (SLAs) with the payment gateway provider to ensure uptime and reliability standards.<br>- Integrate multiple payment gateways to reduce the risk of service interruptions.<br>- Regularly review and renegotiate transaction fees to manage operating costs.<br>- Ensure compliance with Payment Card Industry Data Security Standard (PCI DSS) and regularly update security measures to protect sensitive customer data.                     |
+|    User Authentication and Authorization                | Integrating multi-factor authentication alongside social media logins could complicate the sign-in process, possibly deter users with extra security layers, and create dependence on social media services, which may change their API policies or face downtime.         |  - Inform users about multi-factor authentication advantages to lessen resistance.<br>- Make the multi-factor authentication process smooth and intuitive<br> - Continuously refine and test authentication methods for social media policy changes.<br> - Implement alternative authentication options for social media outages.<br> - Track social media platforms' performance and proactively report issues.
 
 <div style="page-break-after: always;"></div>
 
