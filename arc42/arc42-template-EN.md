@@ -623,19 +623,15 @@ The system confirms secure processing of user payment data through robust encryp
 
 # Risks and Technical Debts
 
-| Risk/Technical Debt Category                         | Risk/Technical Debt Description                                                                                                                                     | Suggested Measures                                                                                                                                                                                                                           |
+This section delves deeper into the potential risks and technical debts, addressing the challenges and uncertainties that may impact the seamless development and operation in more detail.
+
+| Risk/Technical Debt Category | Risk/Technical Debt Description | Suggested Measures |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NoSQL Database & Real Time Data Processing           | NoSQL databases introduce challenges related to data consistency, complex queries, and developer learning curves.                                                    | - Use ACID Transactions to maintain data consistency.<br>- Implement a microservices-based architectural approach for horizontal scalability and to handle growing data volumes and demand spikes efficiently.                               |
 | Using Cloud Based Infrastructure                     | The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies.                                   | - Conduct Traffic Testing to ensure the system can handle variable traffic loads.<br>- Engage in Workload Planning to optimize costs by accurately provisioning resources.<br>- Develop an Incident Response Plan for swift action during service outages or security incidents.<br>- Perform Security Audits to regularly assess IaaS security. |
 | Dependency on Third-Party Services                   | Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.                     | - Optimize Service Usage and Contracts by actively monitoring service usage to identify cost-saving opportunities and negotiate cost-effective contracts.<br>- Prepare for Service Outages with contingency plans to ensure business continuity, including strategies for graceful degradation and backup solutions.                     |
 |    Payment System Integration                | Dependence on third-party payment service providers may introduce risks such as lack of control over the payment processing, potential for service downtime, and transaction fees affecting profitability.                     | - Establish Service Level Agreements (SLAs) with the payment gateway provider to ensure uptime and reliability standards.<br>- Integrate multiple payment gateways to reduce the risk of service interruptions.<br>- Regularly review and renegotiate transaction fees to manage operating costs.<br>- Ensure compliance with Payment Card Industry Data Security Standard (PCI DSS) and regularly update security measures to protect sensitive customer data.                     |
 |    User Authentication and Authorization                | Integrating multi-factor authentication alongside social media logins could complicate the sign-in process, possibly deter users with extra security layers, and create dependence on social media services, which may change their API policies or face downtime.         |  - Inform users about multi-factor authentication advantages to lessen resistance.<br>- Make the multi-factor authentication process smooth and intuitive<br> - Continuously refine and test authentication methods for social media policy changes.<br> - Implement alternative authentication options for social media outages.<br> - Track social media platforms' performance and proactively report issues.
-
-
-
-
-
-
 
 <div style="page-break-after: always;"></div>
 
