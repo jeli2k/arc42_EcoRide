@@ -146,12 +146,13 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 | Risk/Technical Debt   | Description |
 |-------------|----------------|
-| *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.<br>-Using ACID Transactions to maintain data consistency<br>-By implementing a microservices-based architectural approach, we aim to ensure the horizontal scalability and elasticity of our processing system, allowing us to effortlessly handle growing data volumes and sudden spikes in demand efficiently.*  | 
-| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. To effectively address these challenges, consider these key elements:<br>-Traffic Testing: Ensure your system can handle variable traffic loads, from regular usage to peak demand.<br>-Workload Planning: Optimize costs by accurately provisioning resources based on your application's needs.<br>-Incident Response Planning: Develop a clear plan to swiftly respond to service outages or security incidents.<br>-Security Audits: Regularly assess your IaaS security to identify and mitigate vulnerabilities.<br>* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
-| *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.<br>-Optimize Service Usage and Contracts: Actively monitor service usage to identify cost-saving opportunities and negotiate cost-effective contracts with service providers.<br>-Prepare for Service Outages: Develop contingency plans to ensure business continuity during service outages, including strategies for graceful degradation and backup solutions.* | 
+| *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.*  | 
+| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. To effectively address these challenges, consider these key elements:<br>-Traffic Testing<br>-Workload Planning<br>-Incident Response Planning<br>-Security Audits<br>* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
+| *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.* | 
 
 
 <div style="page-break-after: always;"></div>
+
 
 # System Scope and Context
 
@@ -656,6 +657,18 @@ The system confirms secure processing of user payment data through robust encryp
 <div style="page-break-after: always;"></div>
 
 # Risks and Technical Debts
+
+| Risk/Technical Debt Category                         | Risk/Technical Debt Description                                                                                                                                     | Suggested Measures                                                                                                                                                                                                                           |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| NoSQL Database & Real Time Data Processing           | NoSQL databases introduce challenges related to data consistency, complex queries, and developer learning curves.                                                    | - Use ACID Transactions to maintain data consistency.<br>- Implement a microservices-based architectural approach for horizontal scalability and to handle growing data volumes and demand spikes efficiently.                               |
+| Using Cloud Based Infrastructure                     | The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies.                                   | - Conduct Traffic Testing to ensure the system can handle variable traffic loads.<br>- Engage in Workload Planning to optimize costs by accurately provisioning resources.<br>- Develop an Incident Response Plan for swift action during service outages or security incidents.<br>- Perform Security Audits to regularly assess IaaS security. |
+| Dependency on Third-Party Services                   | Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.                     | - Optimize Service Usage and Contracts by actively monitoring service usage to identify cost-saving opportunities and negotiate cost-effective contracts.<br>- Prepare for Service Outages with contingency plans to ensure business continuity, including strategies for graceful degradation and backup solutions.                     |
+|    Payment System Integration                | Dependence on third-party payment service providers may introduce risks such as lack of control over the payment processing, potential for service downtime, and transaction fees affecting profitability.                     | - Establish Service Level Agreements (SLAs) with the payment gateway provider to ensure uptime and reliability standards.<br>- Integrate multiple payment gateways to reduce the risk of service interruptions.<br>- Regularly review and renegotiate transaction fees to manage operating costs.<br>- Ensure compliance with Payment Card Industry Data Security Standard (PCI DSS) and regularly update security measures to protect sensitive customer data.                     |
+
+
+
+
+
 
 <div class="formalpara-title">
 
