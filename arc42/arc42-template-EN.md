@@ -165,42 +165,7 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 <div class="formalpara-title">
 
-**Contents**
-
-</div>
-
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
--   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
+This overview encapsulates EcoRide's engagement with its operational and technical spheres, detailing user interactions and system infrastructure.
 
 ## Business Context
 
@@ -489,7 +454,7 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 </div>
 
-<img src="images/DeploymentView.png" alt="Deployment View Diagram">
+
 
 The deployment view describes:
 
@@ -559,7 +524,8 @@ Describe (usually in a combination of diagrams, tables, and text):
 For multiple environments or alternative deployments please copy and
 adapt this section of arc42 for all relevant environments.
 
-***\<Overview Diagram>***
+<img src="images/DeploymentView-Level1.drawio.png" alt="Deployment View Diagram">
+
 
 Motivation  
 *\<explanation in text form>*
@@ -573,9 +539,13 @@ Mapping of Building Blocks to Infrastructure
 ## Infrastructure Level 2
 
 Here you can include the internal structure of (some) infrastructure
-elements from level 1.
+elements from level1.
 
 Please copy the structure from level 1 for each selected element.
+
+<img src="images/DeploymentView.png" alt="Deployment View Diagram">
+
+
 
 ### *\<Infrastructure Element 1>*
 
