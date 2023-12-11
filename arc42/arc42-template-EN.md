@@ -157,42 +157,7 @@ These constraints encompass various elements, from infrastructure choices to dat
 
 <div class="formalpara-title">
 
-**Contents**
-
-</div>
-
-System scope and context - as the name suggests - delimits your system
-(i.e. your scope) from all its communication partners (neighboring
-systems and users, i.e. the context of your system). It thereby
-specifies the external interfaces.
-
-If necessary, differentiate the business context (domain specific inputs
-and outputs) from the technical context (channels, protocols, hardware).
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-The domain interfaces and technical interfaces to communication partners
-are among your system’s most critical aspects. Make sure that you
-completely understand them.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-Various options:
-
--   Context diagrams
-
 -   Lists of communication partners and their interfaces.
-
-See [Context and Scope](https://docs.arc42.org/section-3/) in the arc42
-documentation.
 
 ## Business Context
 
@@ -247,26 +212,11 @@ documentation.-->
 
 The Building Block View offers a structured snapshot of our system's architecture, breaking down key components and their interconnections to provide a comprehensive understanding of how EcoRide's functionalities are organized and interact
 
-**Level 1**
+## Whitebox Overall System
 
 This level serves as an overview of the entire system. It showcases the core components, such as FileSystemStorage, Cars, Rides, Profile and more. This level explains the interactions between these components, revealing how users access the system, how data flows between different servers or services, and how external systems communicate with the system.
 
 ![Level 1 of the Building Blocks Hierachy](images/level1-Page-1.jpg)
-
-**Level 2**
-
-Level 2 goes deeper into the system than Level 1. It shows more details about each part like servers, databases, and software. It explains how these parts work together, detailing specific server setups, database designs, and software functions. This level covers how data moves between different parts, and how outside systems connect. It's a closer look at how things work inside the system beyond the basic structure.
-
-![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
-
-**Level 3**
-
-This level dives even deeper into the system. It gets more detailed about the CarsController mentioned in Level 2. This level shows exactly how the CarsController is set up and the external APIs
-
-![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
-
-
-## Whitebox Overall System
 
 Here you describe the decomposition of the overall system using the
 following white box template. It contains
@@ -295,8 +245,6 @@ following white box template. It contains
     protocols, error handling, restrictions, versions, qualities,
     necessary compatibilities and many things more. In the best case you
     will get away with examples or simple signatures.
-
-***\<Overview Diagram>***
 
 Motivation  
 *\<text explanation>*
@@ -370,6 +318,10 @@ template:
 
 ## Level 2
 
+The Level 2 view delves into the "Cars" component, which comprises the following components: ChartsService, CarsController, CarsRepository, and CarsInsuranceRepository. Notably, the ChartsService component is linked to the charts API and the CarsController component is linked to the cars API.
+
+![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
+
 Here you can specify the inner structure of (some) building blocks from
 level 1 as white boxes.
 
@@ -396,6 +348,10 @@ standardized parts of your system
 *\<white box template>*
 
 ## Level 3
+
+This level dives even deeper into the system. It gets more detailed about the CarsController mentioned in Level 2. This level shows exactly how the CarsController is set up and its communication with external APIs.
+
+![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
 
 Here you can specify the inner structure of (some) building blocks from
 level 2 as white boxes.
@@ -761,3 +717,7 @@ documentation.
 |-------------|-------------------|
 | *\<Term-1>* | *\<definition-1>* |
 | *\<Term-2>* | *\<definition-2>* |
+|         a    |a|
+|       a      |a|
+|      a       |a|
+|     a        |a|
