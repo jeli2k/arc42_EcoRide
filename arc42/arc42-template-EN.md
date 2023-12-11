@@ -152,7 +152,7 @@ EcoRide is committed to identifying and addressing potential risks and technical
 | Risk/Technical Debt   | Description |
 |-------------|----------------|
 | *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.*  | 
-| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. To effectively address these challenges, consider these key elements:<br>-Traffic Testing<br>-Workload Planning<br>-Incident Response Planning<br>-Security Audits<br>* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
+| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
 | *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.* | 
 
 
@@ -668,46 +668,13 @@ The system confirms secure processing of user payment data through robust encryp
 | Using Cloud Based Infrastructure                     | The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies.                                   | - Conduct Traffic Testing to ensure the system can handle variable traffic loads.<br>- Engage in Workload Planning to optimize costs by accurately provisioning resources.<br>- Develop an Incident Response Plan for swift action during service outages or security incidents.<br>- Perform Security Audits to regularly assess IaaS security. |
 | Dependency on Third-Party Services                   | Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.                     | - Optimize Service Usage and Contracts by actively monitoring service usage to identify cost-saving opportunities and negotiate cost-effective contracts.<br>- Prepare for Service Outages with contingency plans to ensure business continuity, including strategies for graceful degradation and backup solutions.                     |
 |    Payment System Integration                | Dependence on third-party payment service providers may introduce risks such as lack of control over the payment processing, potential for service downtime, and transaction fees affecting profitability.                     | - Establish Service Level Agreements (SLAs) with the payment gateway provider to ensure uptime and reliability standards.<br>- Integrate multiple payment gateways to reduce the risk of service interruptions.<br>- Regularly review and renegotiate transaction fees to manage operating costs.<br>- Ensure compliance with Payment Card Industry Data Security Standard (PCI DSS) and regularly update security measures to protect sensitive customer data.                     |
+|    User Authentication and Authorization                | Integrating multi-factor authentication alongside social media logins could complicate the sign-in process, possibly deter users with extra security layers, and create dependence on social media services, which may change their API policies or face downtime.         |  - Inform users about multi-factor authentication advantages to lessen resistance.<br>- Make the multi-factor authentication process smooth and intuitive<br> - Continuously refine and test authentication methods for social media policy changes.<br> - Implement alternative authentication options for social media outages.<br> - Track social media platforms' performance and proactively report issues.
 
 
 
 
 
 
-<div class="formalpara-title">
-
-**Contents**
-
-</div>
-
-A list of identified technical risks or technical debts, ordered by
-priority
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-“Risk management is project management for grown-ups” (Tim Lister,
-Atlantic Systems Guild.)
-
-This should be your motto for systematic detection and evaluation of
-risks and technical debts in the architecture, which will be needed by
-management stakeholders (e.g. project managers, product owners) as part
-of the overall risk analysis and measurement planning.
-
-<div class="formalpara-title">
-
-**Form**
-
-</div>
-
-List of risks and/or technical debts, probably including suggested
-measures to minimize, mitigate or avoid risks or reduce technical debts.
-
-See [Risks and Technical Debt](https://docs.arc42.org/section-11/) in
-the arc42 documentation.
 
 <div style="page-break-after: always;"></div>
 
