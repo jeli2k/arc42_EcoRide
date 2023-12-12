@@ -172,6 +172,21 @@ The following diagram provides a comprehensive view of the system's communicatio
 <img src="images/Business_Context_Diagram.png" alt="Business Context Diagram">
 </p>
 
+User Interaction: At the top left, the 'User' represents the customers who will be using the Ride Sharing service. They interact directly with 'Drivers' who provide the transportation service. Users also interact with the system for payments through a 'Payment Gateway' and for navigation or locating rides through a 'Map Service.'
+
+Eco Ride Central System: In the center of the diagram, 'Eco Ride' represents the central system that orchestrates the service. It connects all components of the service, facilitating communication between them.
+
+Driver Services: 'Eco Ride' provides services to 'Drivers,' including ride assignments, navigation assistance, and other support needed to complete the rides.
+
+Payment Processing: The 'Payment Gateway' handles the financial transactions, such as processing user payments and disbursing earnings to drivers.
+
+Mapping Services: 'Eco Ride' provides mapping capabilities, including route optimization and real-time traffic updates, which are essential for a transportation service through Google Maps.
+
+Backend Operations: At the bottom of the diagram, we see the backend components that 'Eco Ride' uses to manage its operations:
+
+Admin Panel: This is where the management and monitoring of the service happen. It provides control over the various aspects of the service, from ride prices to driver management.
+
+Database: 'Eco Ride' stores its data in a 'Database,' which includes user profiles, ride history, payment transactions, and more. This is critical for maintaining records, analytics, and personalizing the user experience.
 
 ## Technical Context
 
@@ -181,8 +196,34 @@ Understanding EcoRide's technological landscape involves delving into the fundam
 
 <div class="formalpara-title">
 
-
 <div style="page-break-after: always;"></div>
+
+### Development Environment: 
+
+#### This is where the application is initially developed. It includes:
+
+Application Servers: Where the actual development of the EcoRide application takes place. <p>
+Development Repository: A version control system where the application code is stored and managed. <p>
+Issue Tracking and Document System: Tools to track bugs and manage project documentation. <p>
+Containerization and Orchestration: Technologies used to package the application in containers, making it easy to deploy across different environments. <p>
+Developer Tools: Software and applications that developers use to write, test, and debug code. <p>
+Frameworks: These are used to provide structured testing of the application's functionalities. <p>
+Test Environment: After the application is developed, it moves to the test environment for quality assurance. <p>
+
+Test Management System: Here, the application undergoes various tests to ensure it meets quality standards. <p>
+
+
+### Production Environment: 
+
+#### This is where the live application is hosted.
+
+Database Servers: These servers manage the databases that store the EcoRide application data. <p>
+Load Balancers: These help to distribute the incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, which increases reliability and performance. <p>
+Application Servers: The servers that host the live EcoRide application, serving users' requests.<p>
+Backup System: It ensures data integrity and availability, safeguarding against data loss. <p>
+EcoRide Application: The actual application that users interact with. <p>
+External Services: These include third-party services that the application relies on, such as payment processors or map services. <p>
+Security Services: Systems in place to protect the application from security threats and ensure user data is safely handled.
 
 # Solution Strategy
 
@@ -223,103 +264,40 @@ This level serves as an overview of the entire system. It showcases the core com
 
 ![Level 1 of the Building Blocks Hierachy](images/level1-Page-1.jpg)
 
-Here you describe the decomposition of the overall system using the
-following white box template. It contains
+### Contained Building Blocks
 
--   an overview diagram
+EcoRide api: This is the central interface for the application, the set of application programming interfaces (APIs) through which the application's services are accessed and interacted with.
 
--   a motivation for the decomposition
+Cars: Represents the component that manages information related to vehicles in the service, such as registration details, availability, and other car-specific data.
 
--   black box descriptions of the contained building blocks. For these
-    we offer you alternatives:
+Rides: This component manages the ride details, such as scheduling, ride status, and ride history.
 
-    -   use *one* table for a short and pragmatic overview of all
-        contained building blocks and their interfaces
+Profile: Handles user profile information, which include personal details, preferences, and usage history.
 
-    -   use a list of black box descriptions of the building blocks
-        according to the black box template (see below). Depending on
-        your choice of tool this list could be sub-chapters (in text
-        files), sub-pages (in a Wiki) or nested elements (in a modeling
-        tool).
+User: Represents the end-user component that interacts with the application, including user authentication and session management.
 
--   (optional:) important interfaces, that are not explained in the
-    black box templates of a building block, but are very important for
-    understanding the white box. Since there are so many ways to specify
-    interfaces why do not provide a specific template for them. In the
-    worst case you have to specify and describe syntax, semantics,
-    protocols, error handling, restrictions, versions, qualities,
-    necessary compatibilities and many things more. In the best case you
-    will get away with examples or simple signatures.
+PaymentProcessor: The system that handles payment transactions, connected to an external payment API for processing payments.
 
-Motivation  
-*\<text explanation>*
+FileSystemStorage: The storage system where data such as ride details, car information, and user profiles are stored.
 
-Contained Building Blocks  
-*\<Description of contained building block (black boxes)>*
+Statistics: This component is responsible for collecting and analyzing data for reporting and analytics purposes.
 
-Important Interfaces  
-*\<Description of important interfaces>*
+Locations: Manages geographic data, related to rides, user locations, and available cars.
 
-Insert your explanations of black boxes from level 1:
+Mapping: Interacts with an external mapping API to provide mapping and navigation services within the application.
 
-If you use tabular form you will only describe your black boxes with
-name and responsibility according to the following schema:
+User-Interface: The front-end component that users interact with in this context that would be the mobile app.
 
-| **Name**         | **Responsibility** |
-|------------------|--------------------|
-| *\<black box 1>* |  *\<Text>*         |
-| *\<black box 2>* |  *\<Text>*         |
+Booking: Handles the booking process for rides, including ride requests and assignment of cars to users.
 
-If you use a list of black box descriptions then you fill in a separate
-black box template for every important building block . Its headline is
-the name of the black box.
+Communications: Manages in-app communication, such as notifications, alerts, and in-app messaging between users and drivers.
 
-### \<Name black box 1>
+The dashed lines with labels such as "cars api," "rides api," "charts," "locations api," "real-time location updates," "mapping api," "booking api," and "communications api" are external APIs or services that the respective components interact with. <p> 
+Basically third-party services or other microservices within the EcoRide ecosystem.
 
-Here you describe \<black box 1> according the the following black box
-template:
+For example, "cars api" and "rides api" are interfaces for external services that provide additional information or capabilities related to cars and rides, such as a third-party vehicle tracking service. <p>
+"Charts" is a tool for visualizing the statistical data. The "locations api" and "mapping api" indicate the use of external mapping and location services, essential for a ride-sharing service's operations.
 
--   Purpose/Responsibility
-
--   Interface(s), when they are not extracted as separate paragraphs.
-    This interfaces may include qualities and performance
-    characteristics.
-
--   (Optional) Quality-/Performance characteristics of the black box,
-    e.g.availability, run time behavior, ….
-
--   (Optional) directory/file location
-
--   (Optional) Fulfilled requirements (if you need traceability to
-    requirements).
-
--   (Optional) Open issues/problems/risks
-
-*\<Purpose/Responsibility>*
-
-*\<Interface(s)>*
-
-*\<(Optional) Quality/Performance Characteristics>*
-
-*\<(Optional) Directory/File Location>*
-
-*\<(Optional) Fulfilled Requirements>*
-
-*\<(optional) Open Issues/Problems/Risks>*
-
-### \<Name black box 2>
-
-*\<black box template>*
-
-### \<Name black box n>
-
-*\<black box template>*
-
-### \<Name interface 1>
-
-…
-
-### \<Name interface m>
 
 ## Level 2
 
@@ -327,30 +305,15 @@ The Level 2 view delves into the "Cars" component, which comprises the following
 
 ![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
 
-Here you can specify the inner structure of (some) building blocks from
-level 1 as white boxes.
+ChartsService: This service is responsible for generating charts. It handles visual data representations related to cars, such as usage statistics, maintenance schedules, or availability. It interacts with a 'charts api', which is a specialized service for creating various types of charts.
 
-You have to decide which building blocks of your system are important
-enough to justify such a detailed description. Please prefer relevance
-over completeness. Specify important, surprising, risky, complex or
-volatile building blocks. Leave out normal, simple, boring or
-standardized parts of your system
+CarsController: Acts as the intermediary between the 'CarsRepository', 'ChartsService'. It receives requests, processes them ( using data from 'CarsRepository' and 'ChartsService'), and sends back the appropriate responses.
 
-### White Box *\<building block 1>*
+CarsRepository: This repository is where data related to the cars is stored and retrieved from. It functions as the data access layer, interacting directly with the database where car information is stored.
 
-…describes the internal structure of *building block 1*.
+CarsInsuranceRepo: A specialized repository that handles car insurance-related data. This component is responsible for storing, updating, and retrieving insurance information for each vehicle.
 
-*\<white box template>*
-
-### White Box *\<building block 2>*
-
-*\<white box template>*
-
-…
-
-### White Box *\<building block m>*
-
-*\<white box template>*
+The 'cars api' connects to the 'CarsController', and is the entry point for external requests related to car data within the application.
 
 ## Level 3
 
@@ -358,25 +321,33 @@ This level dives even deeper into the system. It gets more detailed about the Ca
 
 ![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
 
-Here you can specify the inner structure of (some) building blocks from
-level 2 as white boxes.
+getAllCars(): Returns a list of all cars in the system. The List < Car > shows that it returns a collection of Car objects.
 
-When you need more detailed levels of your architecture please copy this
-part of arc42 for additional levels.
+getCarById(carId): Retrieves a single car's details based on a unique identifier provided as carId.
 
-### White Box \<\_building block x.1\_\>
+addCar(newCar Car): Adds a new car to the system. The parameter newCar is of type Car, meaning it expects an object that represents a car.
 
-Specifies the internal structure of *building block x.1*.
+updateCar(carID, car): Updates the details of an existing car. It requires the car's identifier and the new Car object that contains updated information.
 
-*\<white box template>*
+deleteCar(carID): Removes a car from the system using the car's identifier.
 
-### White Box \<\_building block x.2\_\>
+getStats(carID): Fetches statistics related to a specific car, meaning performance or usage statistics.
 
-*\<white box template>*
+getInsurance(carID): Retrieves insurance information for a particular car.
 
-### White Box \<\_building block y.1\_\>
+At the bottom of the CarsController class, there is a reference to another component:
 
-*\<white box template>*
+carsService CarsService: This indicates that the CarsController relies on a service named CarsService, which contains the business logic needed to carry out the operations listed above.
+
+On the right side of the diagram, there are two dashed lines labeled "RideManagementComponent", "Database", and "Charts", describing that CarsController interacts with these components or services:
+
+RideManagementComponent: This acts as part of the application responsible for managing ride details. The CarsController is interfacing with it to get or set information related to rides for specific cars.
+
+Database: This represents the persistence layer, where CarsController will store and retrieve data.
+
+Charts: This shows that the controller uses a charting service or component to visualize data, possibly for reporting or analytics purposes.
+
+
 
 <div style="page-break-after: always;"></div>
 
@@ -460,58 +431,86 @@ documentation.
 
 ## Infrastructure Level 1
 
-Describe (usually in a combination of diagrams, tables, and text):
-
--   distribution of a system to multiple locations, environments,
-    computers, processors, .., as well as physical connections between
-    them
-
--   important justifications or motivations for this deployment
-    structure
-
--   quality and/or performance features of this infrastructure
-
--   mapping of software artifacts to elements of this infrastructure
-
-For multiple environments or alternative deployments please copy and
-adapt this section of arc42 for all relevant environments.
+Having a well-structured technical infrastructure is important to ensuring efficient workflow and product stability. The infrastructure is divided into different environments, each serving a unique purpose, and is designed to work cohesively to support the lifecycle of a software application from development to deployment.
 
 <img src="images/DeploymentView-Level1.drawio.png" alt="Deployment View Diagram">
 
 
-Motivation  
-*\<explanation in text form>*
+At the top of the diagram, we have the Development Environment, which is the playground where new software is created and refined. It includes Application Servers for running the software, a Development Repository where code is stored and versioned, and Continuous Integration Servers that help in integrating code changes smoothly. There is also an Issue Tracking and Document System, which is essential for keeping track of bugs and documentation.
 
-Quality and/or Performance Features  
-*\<explanation in text form>*
+Parallel to this is the Test Environment, equipped with Test Servers and a Test Management System, where the software undergoes rigorous testing to ensure quality and performance. This environment mimics the production setting to catch any potential issues before the software goes live.
 
-Mapping of Building Blocks to Infrastructure  
-*\<description of the mapping>*
+These environments are supported by Developer Tools and Frameworks, which provide the necessary utilities and libraries for developers to write and test their code efficiently.
 
+Once the software has passed the testing phase, it moves to the Production Environment. This is where the software is available for end-users. It consists of Database Servers to store user data, which are backed up regularly for data safety. Load Balancers are used to distribute incoming traffic to ensure the application remains stable and responsive under different load conditions.
+
+The central element here is the EcoRide Application, which is available as an iOS App and an Android App. This setup shows the application's flexibility across different mobile platforms. External Services are integrated to provide additional functionality to the application.
+
+The Application Servers in the production environment also contain a Web Server to handle web traffic and a Cache Server to improve performance by temporarily storing frequently accessed data. Security Services including Encryption Services and a Firewall safeguard the system from unauthorized access and potential security threats.
 ## Infrastructure Level 2
 
-Here you can include the internal structure of (some) infrastructure
-elements from level1.
-
-Please copy the structure from level 1 for each selected element.
+Here we can see the Infrastructure Level from a deeper viewpoint. We see each layer depicted more thorougly and with more detail. Below is a quick explanation what purpose all these blocks serve.
 
 <img src="images/DeploymentView.png" alt="Deployment View Diagram">
 
+### <u>Development Environment: </u>
+
+#### Application Servers: Host the development version of the application. <p>
+Continuous Integration Server: Automatically tests code changes to ensure they don't break the application <p>
+Development Database Server: The database used during development, containing test data. <p> <p>
+
+#### Containerization and Orchestration: 
+
+Both Tools Docker and Kubernetes help in creating consistent development environments and managing them at scale.<p>
 
 
-### *\<Infrastructure Element 1>*
+#### Development Repository: 
 
-*\<diagram + explanation>*
+Where the code is stored, managed with a version control system called GitHub. <p>
 
-### *\<Infrastructure Element 2>*
+#### Issue Tracking and Document System: 
 
-*\<diagram + explanation>*
+Tools for managing project tasks and documentation, in this case Jira for task management, and Confluence for documentation.
 
-…
+#### Test Environment:
+##### Test Servers: Where the application is deployed for testing.
+##### Test Management System: Includes tools for continuous integration/deployment (CI/CD), API testing, and automated testing, in this case Jenkins, Postman, and JUnit.
 
-### *\<Infrastructure Element n>*
+#### Developer Tools:
 
-*\<diagram + explanation>*
+IDE (Integrated Development Environment): The software application used for writing code, in this case Visual Studio Code (VSC). <p>
+Git (Version Control System): Used for tracking changes in the source code during development.
+
+
+#### Frameworks:
+Frontend: React and Angular for user interfaces.
+Backend: Spring Boot for server-side logic, APIs, and routing.
+Mobile: Retrofit for Android network requests and Alamofire for iOS.
+### <u>Production Environment: </u>
+#### Database Servers: 
+Production databases, in this case MySQL. <p>
+
+#### Load Balancers: 
+Distributes traffic across servers and resources, using the tool Google Cloud Balancing. <p>
+
+#### EcoRide Application: 
+
+The actual application available to end-users, with versions for iOS (Swift) and Android (Kotlin). <p>
+
+#### Backup System: 
+Ensures data integrity and availability,  using a cloud solution called Google Cloud.
+
+#### External Services:
+Third-party services used by the application, such as real-time location tracking and Google Maps.
+
+#### Application Servers:
+Web Server: Apache Tomcat for serving web content. <p>
+Cache Server: Caches frequently accessed data, in this case Apache mod_cache is used to improve performance. <p>
+
+#### Security Services:
+Encryption Services: Protects data through end-to-end encryption. <p>
+Firewall: Protects the web application from unauthorized access or cyber-attacks.
+
 
 <div style="page-break-after: always;"></div>
 
