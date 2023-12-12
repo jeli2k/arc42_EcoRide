@@ -506,7 +506,7 @@ This involves implementing data encryption techniques to protect sensitive infor
 
 # Architecture Decisions
 
-This table offers an in-depth examination of key architecture decisions, shedding light on both high-priority choices previously mentioned and two additional significant decisions, Payment System Integration and User Authentication and Authorization, contributing to the overall development trajectory of our innovative ride-sharing platform.
+This section offers an in-depth examination of key architecture decisions, shedding light on both high-priority choices previously mentioned and two additional significant decisions, Payment System Integration and User Authentication and Authorization, contributing to the overall development trajectory of our innovative ride-sharing platform.
 
 <div class="formalpara-title">
 
@@ -609,11 +609,11 @@ The Quality Tree provides a detailed quality tree along with associated scenario
 
 Each requirement is carefully tailored to address the specific and quantifiable expectations of stakeholders, providing a robust foundation for informed development and rigorous evaluation of our ride-sharing solution.
 
-| Quality Requirements |  |  |
-|---|---|---|
-| Reliability |  |  |
-| User-Friendliness |  |  |
-| Data Security |  |  |
+| Quality Requirements |
+|---|
+| Reliability |
+| User-Friendliness |
+| Data Security |
 
 
 ## Quality Tree
