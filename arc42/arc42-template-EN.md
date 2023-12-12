@@ -1,8 +1,6 @@
 
 # RideShare: EcoRide
 
-<div style="page-break-after: always;"></div>
-
 # Introduction and Goals
 
 <!-- (Describes the relevant requirements and the driving forces that software architects and development team must consider. These include)-->
@@ -77,6 +75,8 @@ Our Stakeholders and their expectations are:
     - As a government authority, I want to promote an environmentally friendly ride-sharing app to support sustainable mobility and reduce CO2 emissions in my region
  - Payment Providers
     - As a payment provider, I want the ride-sharing app to seamlessly integrate payment processing to provide its users with a smooth transaction experience
+
+<div style="page-break-after: always;"></div>
 
 ## Requirements Overview
 This overview outlines the essential criteria for innovative, efficient, and environmentally responsible solutions.
@@ -154,9 +154,7 @@ EcoRide is committed to identifying and addressing potential risks and technical
 | *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
 | *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.* | 
 
-
 <div style="page-break-after: always;"></div>
-
 
 # System Scope and Context
 
@@ -172,21 +170,21 @@ The following diagram provides a comprehensive view of the system's communicatio
 <img src="images/Business_Context_Diagram.png" alt="Business Context Diagram">
 </p>
 
-User Interaction: At the top left, the 'User' represents the customers who will be using the Ride Sharing service. They interact directly with 'Drivers' who provide the transportation service. Users also interact with the system for payments through a 'Payment Gateway' and for navigation or locating rides through a 'Map Service.'
+**User Interaction**: At the top left, the 'User' represents the customers who will be using the Ride Sharing service. They interact directly with 'Drivers' who provide the transportation service. Users also interact with the system for payments through a 'Payment Gateway' and for navigation or locating rides through a 'Map Service.'
 
-Eco Ride Central System: In the center of the diagram, 'Eco Ride' represents the central system that orchestrates the service. It connects all components of the service, facilitating communication between them.
+**Eco Ride Central System**: In the center of the diagram, 'Eco Ride' represents the central system that orchestrates the service. It connects all components of the service, facilitating communication between them.
 
-Driver Services: 'Eco Ride' provides services to 'Drivers,' including ride assignments, navigation assistance, and other support needed to complete the rides.
+**Driver Services**: 'Eco Ride' provides services to 'Drivers,' including ride assignments, navigation assistance, and other support needed to complete the rides.
 
-Payment Processing: The 'Payment Gateway' handles the financial transactions, such as processing user payments and disbursing earnings to drivers.
+**Payment Processing**: The 'Payment Gateway' handles the financial transactions, such as processing user payments and disbursing earnings to drivers.
 
-Mapping Services: 'Eco Ride' provides mapping capabilities, including route optimization and real-time traffic updates, which are essential for a transportation service through Google Maps.
+**Mapping Services**: 'Eco Ride' provides mapping capabilities, including route optimization and real-time traffic updates, which are essential for a transportation service through Google Maps.
 
-Backend Operations: At the bottom of the diagram, we see the backend components that 'Eco Ride' uses to manage its operations:
+**Backend Operations**: At the bottom of the diagram, we see the backend components that 'Eco Ride' uses to manage its operations:
 
-Admin Panel: This is where the management and monitoring of the service happen. It provides control over the various aspects of the service, from ride prices to driver management.
+**Admin Panel**: This is where the management and monitoring of the service happen. It provides control over the various aspects of the service, from ride prices to driver management.
 
-Database: 'Eco Ride' stores its data in a 'Database,' which includes user profiles, ride history, payment transactions, and more. This is critical for maintaining records, analytics, and personalizing the user experience.
+**Database**: 'Eco Ride' stores its data in a 'Database,' which includes user profiles, ride history, payment transactions, and more. This is critical for maintaining records, analytics, and personalizing the user experience.
 
 ## Technical Context
 
@@ -202,28 +200,30 @@ Understanding EcoRide's technological landscape involves delving into the fundam
 
 #### This is where the application is initially developed. It includes:
 
-Application Servers: Where the actual development of the EcoRide application takes place. <p>
-Development Repository: A version control system where the application code is stored and managed. <p>
-Issue Tracking and Document System: Tools to track bugs and manage project documentation. <p>
-Containerization and Orchestration: Technologies used to package the application in containers, making it easy to deploy across different environments. <p>
-Developer Tools: Software and applications that developers use to write, test, and debug code. <p>
-Frameworks: These are used to provide structured testing of the application's functionalities. <p>
-Test Environment: After the application is developed, it moves to the test environment for quality assurance. <p>
+**Application Servers**: Where the actual development of the EcoRide application takes place. <p>
+**Development Repository**: A version control system where the application code is stored and managed. <p>
+**Issue Tracking and Document System**: Tools to track bugs and manage project documentation. <p>
+**Containerization and Orchestration**: Technologies used to package the application in containers, making it easy to deploy across different environments. <p>
+**Developer Tools**: Software and applications that developers use to write, test, and debug code. <p>
+**Frameworks**: These are used to provide structured testing of the application's functionalities. <p>
+**Test Environment**: After the application is developed, it moves to the test environment for quality assurance. <p>
 
-Test Management System: Here, the application undergoes various tests to ensure it meets quality standards. <p>
+**Test Management System**: Here, the application undergoes various tests to ensure it meets quality standards. <p>
 
 
 ### Production Environment: 
 
 #### This is where the live application is hosted.
 
-Database Servers: These servers manage the databases that store the EcoRide application data. <p>
-Load Balancers: These help to distribute the incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, which increases reliability and performance. <p>
-Application Servers: The servers that host the live EcoRide application, serving users' requests.<p>
-Backup System: It ensures data integrity and availability, safeguarding against data loss. <p>
-EcoRide Application: The actual application that users interact with. <p>
-External Services: These include third-party services that the application relies on, such as payment processors or map services. <p>
-Security Services: Systems in place to protect the application from security threats and ensure user data is safely handled.
+**Database Servers**: These servers manage the databases that store the EcoRide application data. <p>
+**Load Balancers**: These help to distribute the incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, which increases reliability and performance. <p>
+**Application Servers**: The servers that host the live EcoRide application, serving users' requests.<p>
+**Backup System**: It ensures data integrity and availability, safeguarding against data loss. <p>
+**EcoRide Application**: The actual application that users interact with. <p>
+**External Services**: These include third-party services that the application relies on, such as payment processors or map services. <p>
+**Security Services**: Systems in place to protect the application from security threats and ensure user data is safely handled.
+
+<div style="page-break-after: always;"></div>
 
 # Solution Strategy
 
@@ -266,38 +266,38 @@ This level serves as an overview of the entire system. It showcases the core com
 
 ### Contained Building Blocks
 
-EcoRide api: This is the central interface for the application, the set of application programming interfaces (APIs) through which the application's services are accessed and interacted with.
+**EcoRide API**: This is the central interface for the application, the set of application programming interfaces (APIs) through which the application's services are accessed and interacted with.
 
-Cars: Represents the component that manages information related to vehicles in the service, such as registration details, availability, and other car-specific data.
+**Cars**: Represents the component that manages information related to vehicles in the service, such as registration details, availability, and other car-specific data.
 
-Rides: This component manages the ride details, such as scheduling, ride status, and ride history.
+**Rides**: This component manages the ride details, such as scheduling, ride status, and ride history.
 
-Profile: Handles user profile information, which include personal details, preferences, and usage history.
+**Profile**: Handles user profile information, which include personal details, preferences, and usage history.
 
-User: Represents the end-user component that interacts with the application, including user authentication and session management.
+**User**: Represents the end-user component that interacts with the application, including user authentication and session management.
 
-PaymentProcessor: The system that handles payment transactions, connected to an external payment API for processing payments.
+**PaymentProcessor**: The system that handles payment transactions, connected to an external payment API for processing payments.
 
-FileSystemStorage: The storage system where data such as ride details, car information, and user profiles are stored.
+**FileSystemStorage**: The storage system where data such as ride details, car information, and user profiles are stored.
 
-Statistics: This component is responsible for collecting and analyzing data for reporting and analytics purposes.
+**Statistics**: This component is responsible for collecting and analyzing data for reporting and analytics purposes.
 
-Locations: Manages geographic data, related to rides, user locations, and available cars.
+**Locations**: Manages geographic data, related to rides, user locations, and available cars.
 
-Mapping: Interacts with an external mapping API to provide mapping and navigation services within the application.
+**Mapping**: Interacts with an external mapping API to provide mapping and navigation services within the application.
 
-User-Interface: The front-end component that users interact with in this context that would be the mobile app.
+**User-Interface**: The front-end component that users interact with in this context that would be the mobile app.
 
-Booking: Handles the booking process for rides, including ride requests and assignment of cars to users.
+**Booking**: Handles the booking process for rides, including ride requests and assignment of cars to users.
 
-Communications: Manages in-app communication, such as notifications, alerts, and in-app messaging between users and drivers.
+**Communications**: Manages in-app communication, such as notifications, alerts, and in-app messaging between users and drivers.
 
-The dashed lines with labels such as "cars api," "rides api," "charts," "locations api," "real-time location updates," "mapping api," "booking api," and "communications api" are external APIs or services that the respective components interact with. <p> 
-Basically third-party services or other microservices within the EcoRide ecosystem.
+The dashed lines with labels such as "cars api," "rides api," "charts," "locations api," "real-time location updates," "mapping api," "booking api," and "communications api" are external APIs, third-party services or other services that the respective components within the EcoRide ecosystem interact with. <p> 
 
 For example, "cars api" and "rides api" are interfaces for external services that provide additional information or capabilities related to cars and rides, such as a third-party vehicle tracking service. <p>
-"Charts" is a tool for visualizing the statistical data. The "locations api" and "mapping api" indicate the use of external mapping and location services, essential for a ride-sharing service's operations.
+**"Charts"** is a tool for visualizing the statistical data. The "locations api" and "mapping api" indicate the use of external mapping and location services, essential for a ride-sharing service's operations.
 
+<div style="page-break-after: always;"></div>
 
 ## Level 2
 
@@ -305,15 +305,17 @@ The Level 2 view delves into the "Cars" component, which comprises the following
 
 ![Level 2 of the Building Blocks Hierachy](images/level2-Page-2.jpg)
 
-ChartsService: This service is responsible for generating charts. It handles visual data representations related to cars, such as usage statistics, maintenance schedules, or availability. It interacts with a 'charts api', which is a specialized service for creating various types of charts.
+**ChartsService**: This service is responsible for generating charts. It handles visual data representations related to cars, such as usage statistics, maintenance schedules, or availability. It interacts with a 'charts api', which is a specialized service for creating various types of charts.
 
-CarsController: Acts as the intermediary between the 'CarsRepository', 'ChartsService'. It receives requests, processes them ( using data from 'CarsRepository' and 'ChartsService'), and sends back the appropriate responses.
+**CarsController**: Acts as the intermediary between the 'CarsRepository', 'ChartsService'. It receives requests, processes them ( using data from 'CarsRepository' and 'ChartsService'), and sends back the appropriate responses.
 
-CarsRepository: This repository is where data related to the cars is stored and retrieved from. It functions as the data access layer, interacting directly with the database where car information is stored.
+**CarsRepository**: This repository is where data related to the cars is stored and retrieved from. It functions as the data access layer, interacting directly with the database where car information is stored.
 
-CarsInsuranceRepo: A specialized repository that handles car insurance-related data. This component is responsible for storing, updating, and retrieving insurance information for each vehicle.
+**CarsInsuranceRepo**: A specialized repository that handles car insurance-related data. This component is responsible for storing, updating, and retrieving insurance information for each vehicle.
 
 The 'cars api' connects to the 'CarsController', and is the entry point for external requests related to car data within the application.
+
+<div style="page-break-after: always;"></div>
 
 ## Level 3
 
@@ -321,31 +323,31 @@ This level dives even deeper into the system. It gets more detailed about the Ca
 
 ![Level 3 of the Building Blocks Hierachy](images/level3-Page-3.jpg)
 
-getAllCars(): Returns a list of all cars in the system. The List < Car > shows that it returns a collection of Car objects.
+**getAllCars()**: Returns a list of all cars in the system. The List < Car > shows that it returns a collection of Car objects.
 
-getCarById(carId): Retrieves a single car's details based on a unique identifier provided as carId.
+**getCarById(carId)**: Retrieves a single car's details based on a unique identifier provided as carId.
 
-addCar(newCar Car): Adds a new car to the system. The parameter newCar is of type Car, meaning it expects an object that represents a car.
+**addCar(newCar Car)**: Adds a new car to the system. The parameter newCar is of type Car, meaning it expects an object that represents a car.
 
-updateCar(carID, car): Updates the details of an existing car. It requires the car's identifier and the new Car object that contains updated information.
+**updateCar(carID, car)**: Updates the details of an existing car. It requires the car's identifier and the new Car object that contains updated information.
 
-deleteCar(carID): Removes a car from the system using the car's identifier.
+**deleteCar(carID)**: Removes a car from the system using the car's identifier.
 
-getStats(carID): Fetches statistics related to a specific car, meaning performance or usage statistics.
+**getStats(carID)**: Fetches statistics related to a specific car, meaning performance or usage statistics.
 
-getInsurance(carID): Retrieves insurance information for a particular car.
+**getInsurance(carID)**: Retrieves insurance information for a particular car.
 
 At the bottom of the CarsController class, there is a reference to another component:
 
-carsService CarsService: This indicates that the CarsController relies on a service named CarsService, which contains the business logic needed to carry out the operations listed above.
+**carsService CarsService**: This indicates that the CarsController relies on a service named CarsService, which contains the business logic needed to carry out the operations listed above.
 
 On the right side of the diagram, there are two dashed lines labeled "RideManagementComponent", "Database", and "Charts", describing that CarsController interacts with these components or services:
 
-RideManagementComponent: This acts as part of the application responsible for managing ride details. The CarsController is interfacing with it to get or set information related to rides for specific cars.
+**RideManagementComponent**: This acts as part of the application responsible for managing ride details. The CarsController is interfacing with it to get or set information related to rides for specific cars.
 
-Database: This represents the persistence layer, where CarsController will store and retrieve data.
+**Database**: This represents the persistence layer, where CarsController will store and retrieve data.
 
-Charts: This shows that the controller uses a charting service or component to visualize data, possibly for reporting or analytics purposes.
+**Charts**: This shows that the controller uses a charting service or component to visualize data, possibly for reporting or analytics purposes.
 
 
 
@@ -371,63 +373,7 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 
 # Deployment View
 
-<div class="formalpara-title">
-
-The following diagram emphasizes meticulous planning and efficient execution in deploying our sustainable transportation solutions. 
-
-</div>
-
-
-
-The deployment view describes:
-
-1.  technical infrastructure used to execute your system, with
-    infrastructure elements like geographical locations, environments,
-    computers, processors, channels and net topologies as well as other
-    infrastructure elements and
-
-2.  mapping of (software) building blocks to that infrastructure
-    elements.
-
-Often systems are executed in different environments, e.g. development
-environment, test environment, production environment. In such cases you
-should document all relevant environments.
-
-Especially document a deployment view if your software is executed as
-distributed system with more than one computer, processor, server or
-container or when you design and construct your own hardware processors
-and chips.
-
-From a software perspective it is sufficient to capture only those
-elements of an infrastructure that are needed to show a deployment of
-your building blocks. Hardware architects can go beyond that and
-describe an infrastructure to any level of detail they need to capture.
-
-<div class="formalpara-title">
-
-**Motivation**
-
-</div>
-
-Software does not run without hardware. This underlying infrastructure
-can and will influence a system and/or some cross-cutting concepts.
-Therefore, there is a need to know the infrastructure.
-
-Maybe a highest level deployment diagram is already contained in section
-3.2. as technical context with your own infrastructure as ONE black box.
-In this section one can zoom into this black box using additional
-deployment diagrams:
-
--   UML offers deployment diagrams to express that view. Use it,
-    probably with nested diagrams, when your infrastructure is more
-    complex.
-
--   When your (hardware) stakeholders prefer other kinds of diagrams
-    rather than a deployment diagram, let them use any kind that is able
-    to show nodes and channels of the infrastructure.
-
-See [Deployment View](https://docs.arc42.org/section-7/) in the arc42
-documentation.
+The following diagrams are dedicated to illustrating and explaining how our system is structured and deployed across different environments. The focus here is to provide a comprehensive overview of the physical distribution of our software components, their interaction with hardware, and the network infrastructure that supports them.
 
 ## Infrastructure Level 1
 
@@ -447,6 +393,7 @@ Once the software has passed the testing phase, it moves to the Production Envir
 The central element here is the EcoRide Application, which is available as an iOS App and an Android App. This setup shows the application's flexibility across different mobile platforms. External Services are integrated to provide additional functionality to the application.
 
 The Application Servers in the production environment also contain a Web Server to handle web traffic and a Cache Server to improve performance by temporarily storing frequently accessed data. Security Services including Encryption Services and a Firewall safeguard the system from unauthorized access and potential security threats.
+
 ## Infrastructure Level 2
 
 Here we can see the Infrastructure Level from a deeper viewpoint. We see each layer depicted more thorougly and with more detail. Below is a quick explanation what purpose all these blocks serve.
