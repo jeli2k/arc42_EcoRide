@@ -63,6 +63,8 @@ In EcoRide, we are committed to achieving three core quality goals:
 
 These pillars serve as the cornerstones of our mission to provide an exceptional and secure user experience
 
+<div style="page-break-after: always;"></div>
+
 ### Stakeholders
 Our Stakeholders and their expectations are:
 - Investors
@@ -99,6 +101,8 @@ Our goals set the standard for excellence in sustainable transportation, focusin
 | *2* | *User-friendliness* | *User-friendliness is a central quality goal for our car-sharing company, as it ensures that customers can effortlessly and intuitively use our services, leading to a positive user experience and increasing the attractiveness of our service* |
 | *3* | *Data security* | *Data security is a primary quality objective for our car-sharing company, as it protects the confidentiality and integrity of sensitive user information, strengthens the trust of our customers, and simultaneously minimizes legal and financial risks.* |
 
+<div style="page-break-after: always;"></div>
+
 ## Stakeholders
 This section is dedicated to understanding and aligning with their interests and expectations, fostering a collaborative and sustainable future.
 
@@ -125,6 +129,7 @@ These constraints encompass various elements, from infrastructure choices to dat
 | The need for flexibility in handling dynamic data, coupled with challenges related to potential data inconsistency and the nuanced trade-offs of the CAP theorem, as well as the demands for high data volume and scalability, influence the decision to employ a database solution suited to our specific data characteristics | We will use a NoSQL Database to address scalability, flexibility, performance and cost efficiency concerns | Flexibility to handle unstructured or semi-structured data, achieve horizontal scalability, and attain high read and write throughput contributes to improved application performance and responsiveness. However, this flexibility may lead to data inconsistency. The use of NoSQL may require careful planning to scale effectively, and trade-offs outlined by the CAP theorem can impact performance and/or strong consistency |
 | Concerns, in managing a dynamic system, arise from the balance required between swift decision-making, consistency, and reliability, all of which are crucial for ensuring user satisfaction and safety | We will use Real Time Data Processing, to enable immediate analysis and response to incoming data | Immediate updates and responses to users, enables real time decision making, competitive advantage. Implementing real-time data processing features adds complexity, requires additional computational resources |
 
+<div style="page-break-after: always;"></div>
 
 ## Architecture Decisions
 These Architecture Decisions reflect our commitment to sustainable innovation, detailing the strategic choices that shape our transportation solutions. The following three are the ones with the highest priority:
@@ -151,7 +156,7 @@ EcoRide is committed to identifying and addressing potential risks and technical
 | Risk/Technical Debt   | Description |
 |-------------|----------------|
 | *NoSQL Database & Real Time Data Processing* | *NoSQL databases, introduces challenges related to data consistency, complex queries, and developer learning curves.*  | 
-| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies. | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
+| *Using Cloud Based Infrastructure* | *The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies.* | *Cloud Based: On demand scalability and flexibility, Cost-Effective, no upfront capital costs, pay-as-you-go model, Data Security, Availability* |
 | *Dependency on Third-Party Services* | *Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.* | 
 
 <div style="page-break-after: always;"></div>
@@ -185,6 +190,8 @@ The following diagram provides a comprehensive view of the system's communicatio
 **Admin Panel**: This is where the management and monitoring of the service happen. It provides control over the various aspects of the service, from ride prices to driver management.
 
 **Database**: 'Eco Ride' stores its data in a 'Database,' which includes user profiles, ride history, payment transactions, and more. This is critical for maintaining records, analytics, and personalizing the user experience.
+
+<div style="page-break-after: always;"></div>
 
 ## Technical Context
 
@@ -237,7 +244,7 @@ A cloud-based infrastructure ensures system reliability, availability, and accel
 
 ### Top-Level Decomposition:
 
-The chosen microservices architectural pattern effectively decomposes the system into manageable, loosely coupled services, allowing for specialized functionalities and easy scaling.
+The SOA pattern effectively decomposes the system into manageable, loosely coupled services, allowing for specialized functionalities and easy scaling. This ensures the creation of services that are designed to be independent and interoperable, facilitating efficient communication and cooperation among various components.
 
 ### Achieving Key Quality Goals:
 
@@ -363,6 +370,8 @@ The Runtime View provides a dynamic perspective on our system's operation, detai
 
 The Runtime View of the ride-booking process visually outlines interactions among three entities: the User's Device with the App, the Server, and the Driver's Device. Users initiate the process by entering their destination (Step 1), leading to the server displaying ride options (Step 2). After confirming ride details (Step 3), the server sends a request to a driver (Step 4), followed by driver acceptance (Step 5). The server communicates confirmation and estimated arrival time to the user (Step 6). Successful ride booking (Step 7) and accurate arrival time (Step 8) conclude the process, emphasizing system responsiveness and seamless communication
 
+<div style="page-break-after: always;"></div>
+
 ## Runtime Scenario: Real-Time Driver Tracking
 
 ![Alt text](images/UML-image-2.png)
@@ -374,6 +383,8 @@ The Runtime View of the Real-Time Driver Tracking captures the interaction dynam
 # Deployment View
 
 The following diagrams are dedicated to illustrating and explaining how our system is structured and deployed across different environments. The focus here is to provide a comprehensive overview of the physical distribution of our software components, their interaction with hardware, and the network infrastructure that supports them.
+
+<div style="page-break-after: always;"></div>
 
 ## Infrastructure Level 1
 
@@ -393,6 +404,8 @@ Once the software has passed the testing phase, it moves to the Production Envir
 The central element here is the EcoRide Application, which is available as an iOS App and an Android App. This setup shows the application's flexibility across different mobile platforms. External Services are integrated to provide additional functionality to the application.
 
 The Application Servers in the production environment also contain a Web Server to handle web traffic and a Cache Server to improve performance by temporarily storing frequently accessed data. Security Services including Encryption Services and a Firewall safeguard the system from unauthorized access and potential security threats.
+
+<div style="page-break-after: always;"></div>
 
 ## Infrastructure Level 2
 
@@ -497,14 +510,92 @@ This table offers an in-depth examination of key architecture decisions, sheddin
 
 <div class="formalpara-title">
 
-| Title | Context | Decision | Status | Consequences |
-|---|---|---|---|---|
-| **Database Selection** | Evaluating SQL, Maria DB, Oracle, and NoSQL options for the system's database | NoSQL | Proposed | **Positives**: <br> Cost-effective solution - Scalability to handle increasing data volume - High availability for robust performance - Compatibility with diverse cloud services - Smooth migration process <br> **Negatives**: <br> Learning curve for NoSQL may impact initial development speed, Potential data consistency challenges due to flexibility, Requires careful planning for effective scaling |
-| **Infrastructure Model** | Choosing between Cloud-Based, On-Premise Infrastructure, and Edge Computing | Cloud-Based | Proposed | **Positive**: On-demand scalability and flexibility, Cost-effectiveness with no upfront capital costs, Pay-as-you-go model for financial management, Enhanced data security measures, High availability <br> **Negative**: Dependency on third-party cloud services, Potential service outages affecting system availability, Data transfer costs and security concerns, Limited physical control over infrastructure |
-| **Data Processing Model** | Selecting the appropriate data processing model among Batch Processing, Stream Processing, and Lambda Architecture | Real-Time Data Processing | Proposed | **Positive**: Immediate updates and responses for enhanced user experience, Real-time decision-making capabilities, Competitive advantage in responsiveness and decision speed <br> **Negative**: Increased system complexity, Additional computational resources required for real-time processing, Potential challenges in implementing and maintaining real-time features |
-| **Payment System Integration** | Determining the approach for integrating a payment system within the EcoRide app, choosing between an in-house payment system development or third-party payment gateway integration | Third-party payment gateway integration | Proposed | **Positive**: Seamless and secure transaction processing, Enhanced user trust through established payment gateways <br> **Negative**: Dependency on external payment service providers, Transaction fees may impact overall operating costs |
-| **User Authentication and Authorization** | Selecting the strategy for user authentication and authorization within the EcoRide system, among traditional username/password authentication, social media login integration and/or multi-factor authentication | Multi-factor authentication with social media login integration | Proposed | **Positive**: Improved security with multi-factor authentication, Enhanced user convenience through social media login options <br> **Negative**: Potential user resistance to additional authentication steps, Dependency on external social media platforms for login |
+## Database Selection
+Evaluating SQL, Maria DB, Oracle, and NoSQL options for the system's database
 
+### **Decision**: NoSQL
+### **Status**: Proposed
+### Consequences:
+**Positives**:
+Cost-effective solution
+Scalability to handle increasing data volume
+High availability for robust performance
+Compatibility with diverse cloud services
+Smooth migration process
+<br>
+
+**Negatives**:
+Learning curve for NoSQL may impact initial development speed
+Potential data consistency challenges due to flexibility
+Requires careful planning for effective scaling
+
+## Infrastructure Model
+Choosing between Cloud-Based, On-Premise Infrastructure, and Edge Computing
+
+### **Decision**: Cloud-Based
+### **Status**: Proposed
+### Consequences:
+**Positive**:
+On-demand scalability and flexibility
+Cost-effectiveness with no upfront capital costs
+Pay-as-you-go model for financial management
+Enhanced data security measures
+High availability
+<br>
+
+**Negative**:
+Dependency on third-party cloud services
+Potential service outages affecting system availability
+Data transfer costs and security concerns
+Limited physical control over infrastructure
+
+## Data Processing Model
+Selecting the appropriate data processing model among Batch Processing, Stream Processing, and Lambda Architecture
+
+### **Decision**: Real-Time Data Processing
+### **Status**: Proposed
+### Consequences:
+**Positive**:
+Immediate updates and responses for enhanced user experience
+Real-time decision-making capabilities
+Competitive advantage in responsiveness and decision speed
+<br>
+
+**Negative**:
+Increased system complexity
+Additional computational resources required for real-time processing
+Potential challenges in implementing and maintaining real-time features
+
+## Payment System Integration
+Determining the approach for integrating a payment system within the EcoRide app, choosing between an in-house payment system development or third-party payment gateway integration
+
+### **Decision**: Third-party payment gateway integration
+### **Status**: Proposed
+### Consequences:
+**Positive**:
+Seamless and secure transaction processing
+Enhanced user trust through established payment gateways
+<br>
+
+**Negative**:
+Dependency on external payment service providers
+Transaction fees may impact overall operating costs
+
+
+## User Authentication and Authorization
+Selecting the strategy for user authentication and authorization within the EcoRide system, among traditional username/password authentication, social media login integration and/or multi-factor authentication
+
+### **Decision**: Multi-factor authentication with social media login integration
+### **Status**: Proposed
+### Consequences:
+**Positive**:
+Improved security with multi-factor authentication
+Enhanced user convenience through social media login options
+<br>
+
+**Negative**:
+Potential user resistance to additional authentication steps
+Dependency on external social media platforms for login
 
 <div style="page-break-after: always;"></div>
 
@@ -573,7 +664,7 @@ This section delves deeper into the potential risks and technical debts, address
 
 | Risk/Technical Debt Category | Risk/Technical Debt Description | Suggested Measures |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| NoSQL Database & Real Time Data Processing           | NoSQL databases introduce challenges related to data consistency, complex queries, and developer learning curves.                                                    | - Use ACID Transactions to maintain data consistency.<br>- Implement a microservices-based architectural approach for horizontal scalability and to handle growing data volumes and demand spikes efficiently.                               |
+| NoSQL Database & Real Time Data Processing           | NoSQL databases introduce challenges related to data consistency, complex queries, and developer learning curves.                                                    | - Use ACID Transactions to maintain data consistency.<br>- Implement a Service-Oriented Architecture-based architectural approach for horizontal scalability and to handle growing data volumes and demand spikes efficiently.                               |
 | Using Cloud Based Infrastructure                     | The shift to cloud-based infrastructure introduces risks such as service outages, cost unpredictability, and vendor dependencies.                                   | - Conduct Traffic Testing to ensure the system can handle variable traffic loads.<br>- Engage in Workload Planning to optimize costs by accurately provisioning resources.<br>- Develop an Incident Response Plan for swift action during service outages or security incidents.<br>- Perform Security Audits to regularly assess IaaS security. |
 | Dependency on Third-Party Services                   | Excessive dependence on external services, such as payment gateways and mapping APIs, may result in service interruptions and higher expenses.                     | - Optimize Service Usage and Contracts by actively monitoring service usage to identify cost-saving opportunities and negotiate cost-effective contracts.<br>- Prepare for Service Outages with contingency plans to ensure business continuity, including strategies for graceful degradation and backup solutions.                     |
 |    Payment System Integration                | Dependence on third-party payment service providers may introduce risks such as lack of control over the payment processing, potential for service downtime, and transaction fees affecting profitability.                     | - Establish Service Level Agreements (SLAs) with the payment gateway provider to ensure uptime and reliability standards.<br>- Integrate multiple payment gateways to reduce the risk of service interruptions.<br>- Regularly review and renegotiate transaction fees to manage operating costs.<br>- Ensure compliance with Payment Card Industry Data Security Standard (PCI DSS) and regularly update security measures to protect sensitive customer data.                     |
